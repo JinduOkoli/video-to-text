@@ -1,7 +1,13 @@
 import yt_dlp
 
-
 def download_audio(youtube_url, tempdir) -> str:
+    """
+    Download audio file from YouTube URL
+
+    :param youtube_url: YouTube URL
+    :param tempdir: Temporary directory
+    :return: str containing filename
+    """
     ydl_opts = {
         'format': 'bestaudio/best',
         'outtmpl': f'{tempdir}/%(title)s.%(ext)s',

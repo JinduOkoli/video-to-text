@@ -1,0 +1,46 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.4
+    method: GET
+    uri: https://www.googleapis.com/youtube/v3/search?key=DUMMY&maxResults=1&part=snippet&type=channel
+  response:
+    body:
+      string: "{\n  \"kind\": \"youtube#searchListResponse\",\n  \"etag\": \"UBAOiXjvY0CZ7Ub9tJDO9bUtsU8\",\n
+        \ \"regionCode\": \"US\",\n  \"pageInfo\": {\n    \"totalResults\": 0,\n    \"resultsPerPage\":
+        0\n  },\n  \"items\": []\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 21 Aug 2025 07:16:03 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+version: 1

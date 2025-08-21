@@ -1,0 +1,59 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.4
+    method: GET
+    uri: https://www.googleapis.com/youtube/v3/search?key=DUMMY&maxResults=1&part=snippet&q=GoogleDevelopers&type=channel
+  response:
+    body:
+      string: "{\n  \"kind\": \"youtube#searchListResponse\",\n  \"etag\": \"Kp9DEydzFr0jg-iG0DSemYaUIVY\",\n
+        \ \"nextPageToken\": \"CAEQAA\",\n  \"regionCode\": \"US\",\n  \"pageInfo\":
+        {\n    \"totalResults\": 926,\n    \"resultsPerPage\": 1\n  },\n  \"items\":
+        [\n    {\n      \"kind\": \"youtube#searchResult\",\n      \"etag\": \"toNYjsUOAVe0A0bMDryd5wS9cmc\",\n
+        \     \"id\": {\n        \"kind\": \"youtube#channel\",\n        \"channelId\":
+        \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n      \"snippet\": {\n        \"publishedAt\":
+        \"2007-08-23T00:34:43Z\",\n        \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n
+        \       \"title\": \"Google for Developers\",\n        \"description\": \"Subscribe
+        to join a community of creative developers and learn the latest in Google
+        technology \u2014 from AI and cloud, to mobile ...\",\n        \"thumbnails\":
+        {\n          \"default\": {\n            \"url\": \"https://yt3.ggpht.com/2eI1TjX447QZFDe6R32K0V2mjbVMKT5mIfQR-wK5bAsxttS_7qzUDS1ojoSKeSP0NuWd6sl7qQ=s88-c-k-c0xffffffff-no-rj-mo\"\n
+        \         },\n          \"medium\": {\n            \"url\": \"https://yt3.ggpht.com/2eI1TjX447QZFDe6R32K0V2mjbVMKT5mIfQR-wK5bAsxttS_7qzUDS1ojoSKeSP0NuWd6sl7qQ=s240-c-k-c0xffffffff-no-rj-mo\"\n
+        \         },\n          \"high\": {\n            \"url\": \"https://yt3.ggpht.com/2eI1TjX447QZFDe6R32K0V2mjbVMKT5mIfQR-wK5bAsxttS_7qzUDS1ojoSKeSP0NuWd6sl7qQ=s800-c-k-c0xffffffff-no-rj-mo\"\n
+        \         }\n        },\n        \"channelTitle\": \"Google for Developers\",\n
+        \       \"liveBroadcastContent\": \"none\",\n        \"publishTime\": \"2007-08-23T00:34:43Z\"\n
+        \     }\n    }\n  ]\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 21 Aug 2025 07:02:08 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+version: 1

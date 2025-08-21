@@ -2,7 +2,8 @@ import isodate
 import requests
 
 from typing import List
-from constants import YOUTUBE_API_URL, MIN_VIDEO_DURATION
+
+from video_to_text.constants import YOUTUBE_API_URL, MIN_VIDEO_DURATION
 
 def get_channel_id(channel_name: str, api_key: str) -> str:
     """

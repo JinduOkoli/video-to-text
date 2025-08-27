@@ -1,0 +1,45 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.4
+    method: GET
+    uri: https://www.googleapis.com/youtube/v3/channels?id=Bad_Channel_Id&key=DUMMY&part=contentDetails
+  response:
+    body:
+      string: "{\n  \"kind\": \"youtube#channelListResponse\",\n  \"etag\": \"RuuXzTIr0OoDqI4S0RU6n4FqKEM\",\n
+        \ \"pageInfo\": {\n    \"totalResults\": 0,\n    \"resultsPerPage\": 5\n  }\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 25 Aug 2025 22:24:49 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+version: 1

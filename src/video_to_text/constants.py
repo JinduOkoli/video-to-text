@@ -6,4 +6,4 @@ MIN_VIDEO_DURATION = 900  # in seconds
 
 CHANNEL_NAME = ""
 
-TRANSCRIPT_LOCATION = "files"
+TRANSCRIPT_LOCATION = "video_to_text"

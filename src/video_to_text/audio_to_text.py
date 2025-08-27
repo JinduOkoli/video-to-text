@@ -9,7 +9,7 @@ def transcribe_audio(audio_path: str, title: str):
     segments, info = model.transcribe(audio=audio_path)
     logging.info("Successfully transcribed audio. Writing to file ...")
 
-    folder_path = Path(TRANSCRIPT_LOCATION)
+    folder_path = Path.home() / TRANSCRIPT_LOCATION
     folder_path.mkdir(parents=True, exist_ok=True)
     filepath = folder_path / f"{title}.txt"
     filepath.unlink(missing_ok=True)

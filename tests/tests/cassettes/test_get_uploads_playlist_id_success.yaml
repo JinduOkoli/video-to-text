@@ -1,0 +1,50 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.4
+    method: GET
+    uri: https://www.googleapis.com/youtube/v3/channels?id=UC_x5XG1OV2P6uZZ5FSM9Ttw&key=DUMMY&part=contentDetails
+  response:
+    body:
+      string: "{\n  \"kind\": \"youtube#channelListResponse\",\n  \"etag\": \"h612UhyviV63eK7y4HMgXE59VnY\",\n
+        \ \"pageInfo\": {\n    \"totalResults\": 1,\n    \"resultsPerPage\": 5\n  },\n
+        \ \"items\": [\n    {\n      \"kind\": \"youtube#channel\",\n      \"etag\":
+        \"tjfVDNBL4GkV4fzZBO9NE36KY5o\",\n      \"id\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n
+        \     \"contentDetails\": {\n        \"relatedPlaylists\": {\n          \"likes\":
+        \"\",\n          \"uploads\": \"UU_x5XG1OV2P6uZZ5FSM9Ttw\"\n        }\n      }\n
+        \   }\n  ]\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 25 Aug 2025 22:21:37 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+version: 1

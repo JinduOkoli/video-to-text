@@ -19,5 +19,3 @@ def main():
         audio_text = transcribe_audio(audio_path=audio_path, title=video["Title"])
 
     tempdir.cleanup()
-
-main()

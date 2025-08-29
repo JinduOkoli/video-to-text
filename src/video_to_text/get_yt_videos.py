@@ -5,11 +5,10 @@ import requests
 
 from typing import List
 
-from video_to_text.constants import YOUTUBE_API_URL, MIN_VIDEO_DURATION
+from video_to_text.constants import YOUTUBE_API_URL
 from video_to_text.exceptions import YouTubeAPIException
 
-logger = logging
-logger.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 def get_channel_id(channel_name: str, api_key: str) -> str:
     """
@@ -31,10 +30,11 @@ def get_channel_id(channel_name: str, api_key: str) -> str:
     }
 
     try:
-        resp = requests.get(url=f"{YOUTUBE_API_URL}/search", params=params)
+        url = f"{YOUTUBE_API_URL}/search"
+        resp = requests.get(url=url, params=params)
 
         if not resp.ok:
-            extract_error_message(resp)
+            extract_error_message(resp, url)
 
         items = resp.json().get("items", [])
         if not items:
@@ -59,10 +59,12 @@ def get_uploads_playlist_id(channel_id: str, api_key: str) -> str:
         "key": api_key
     }
     try:
-        resp = requests.get(f"{YOUTUBE_API_URL}/channels", params=params)
+        url = f"{YOUTUBE_API_URL}/channels"
+        logger.debug(f"Retrieving Uploads playlist ID from {url}. Channel ID: {channel_id}")
+        resp = requests.get(url=url, params=params)
 
         if not resp.ok:
-            extract_error_message(resp)
+            extract_error_message(resp, url)
 
         items = resp.json().get("items", [])
         if not items:
@@ -74,7 +76,19 @@ def get_uploads_playlist_id(channel_id: str, api_key: str) -> str:
         logger.error(f"An error occurred while retrieving Upload ID: {e}")
         raise YouTubeAPIException(e)
 
-def get_channel_videos(channel_id: str,  api_key: str, max_num_of_videos=2) -> List:
+def get_channel_videos(channel_id: str,
+                       api_key: str,
+                       max_num_of_videos: int|None,
+                       min_duration: int) -> List:
+    """
+    Retrieve videos from YouTube channel
+
+    :param channel_id: ID of the channel
+    :param api_key: API key for authentication
+    :param max_num_of_videos: Maximum number of videos to retrieve
+    :param min_duration: Minimum duration of the video to retrieve
+    :return: List of videos
+    """
     videos = []
     page_token = None
 
@@ -91,15 +105,21 @@ def get_channel_videos(channel_id: str,  api_key: str, max_num_of_videos=2) -> L
             params["pageToken"] = page_token
 
         try:
-            resp = requests.get(f"{YOUTUBE_API_URL}/playlistItems", params=params).json()
+            url = f"{YOUTUBE_API_URL}/playlistItems"
+            logger.debug(f"Retrieving videos from {url}. Playlist ID: {uploads_playlist_id}")
+            resp = requests.get(url=url, params=params)
 
-            for item in resp.get("items", []):
+            if not resp.ok:
+                extract_error_message(resp, url)
+
+            res = resp.json()
+            for item in res.get("items", []):
                 video_id = item["contentDetails"]["videoId"]
                 title = item["snippet"]["title"]
                 published_at = item["snippet"]["publishedAt"]
                 duration = get_video_duration(video_id=video_id, api_key=api_key)
 
-                if duration < MIN_VIDEO_DURATION:
+                if duration < min_duration:
                     continue
 
                 videos.append({
@@ -108,10 +128,10 @@ def get_channel_videos(channel_id: str,  api_key: str, max_num_of_videos=2) -> L
                     "PublishedAt": published_at
                 })
 
-                if len(videos) == max_num_of_videos:
+                if max_num_of_videos and len(videos) == max_num_of_videos:
                     return videos
 
-            page_token = resp.get("nextPageToken")
+            page_token = res.get("nextPageToken")
             if not page_token:
                 break
 
@@ -126,7 +146,7 @@ def get_video_duration(video_id: str, api_key: str) -> int:
 
     :param video_id: ID of the YouTube video
     :param api_key: API key for authentication
-    :return: str
+    :return: int
     """
     params = {
         "part": "contentDetails",
@@ -134,10 +154,11 @@ def get_video_duration(video_id: str, api_key: str) -> int:
         "key": api_key
     }
     try:
-        resp = requests.get(url=f"{YOUTUBE_API_URL}/videos", params=params)
+        url = f"{YOUTUBE_API_URL}/videos"
+        resp = requests.get(url=url, params=params)
 
         if not resp.ok:
-            extract_error_message(resp)
+            extract_error_message(resp, url)
 
         items = resp.json().get("items", [])
         if not items:
@@ -159,11 +180,17 @@ def parse_duration(duration: str) -> int:
     duration_str = isodate.parse_duration(duration)
     return int(duration_str.total_seconds())
 
+def extract_error_message(resp, url):
+    """
+    Extract detailed error message from YouTube API
 
-def extract_error_message(resp):
-    # Extract detailed error message from YouTube API
+    :param resp: Response from YouTube API
+    :param url: URL request was made to
+    :return:
+    """
     error_message = resp.json().get("error", {}).get("message")
     if error_message:
+        logger.error(f"An error occurred while making request to {url}: {error_message}")
         raise ValueError(f"YouTube API error: {error_message}")
 
     resp.raise_for_status()

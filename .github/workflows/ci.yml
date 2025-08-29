@@ -32,4 +32,4 @@ jobs:
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: |
-          pytest --maxfail=1 --disable-warnings -q
+          pytest --disable-warnings

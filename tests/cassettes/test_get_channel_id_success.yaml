@@ -14,10 +14,10 @@ interactions:
     uri: https://www.googleapis.com/youtube/v3/search?key=DUMMY&maxResults=1&part=snippet&q=GoogleDevelopers&type=channel
   response:
     body:
-      string: "{\n  \"kind\": \"youtube#searchListResponse\",\n  \"etag\": \"H6Wye7EWuASr9dOPxVt7bEOExPQ\",\n
+      string: "{\n  \"kind\": \"youtube#searchListResponse\",\n  \"etag\": \"f0oxshoe33XMAJAlFWOMkTiLI1I\",\n
         \ \"nextPageToken\": \"CAEQAA\",\n  \"regionCode\": \"US\",\n  \"pageInfo\":
-        {\n    \"totalResults\": 1099,\n    \"resultsPerPage\": 1\n  },\n  \"items\":
-        [\n    {\n      \"kind\": \"youtube#searchResult\",\n      \"etag\": \"Pbk6PeCK0LEAC9nL4h-Gdawg0Jw\",\n
+        {\n    \"totalResults\": 1096,\n    \"resultsPerPage\": 1\n  },\n  \"items\":
+        [\n    {\n      \"kind\": \"youtube#searchResult\",\n      \"etag\": \"NjIwI5bqVVrpXTbYN5EhYPSIXzc\",\n
         \     \"id\": {\n        \"kind\": \"youtube#channel\",\n        \"channelId\":
         \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n      \"snippet\": {\n        \"publishedAt\":
         \"2007-08-23T00:34:43Z\",\n        \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n
@@ -38,7 +38,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Wed, 27 Aug 2025 05:13:34 GMT
+      - Fri, 29 Aug 2025 21:23:06 GMT
       Server:
       - scaffolding on HTTPServer2
       Transfer-Encoding:

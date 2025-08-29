@@ -14,10 +14,10 @@ interactions:
     uri: https://www.googleapis.com/youtube/v3/search?key=DUMMY&maxResults=1&part=snippet&q=GoogleDevelopers&type=channel
   response:
     body:
-      string: "{\n  \"kind\": \"youtube#searchListResponse\",\n  \"etag\": \"e0kBqGdHuHtsPJiJqwDtjF1br7g\",\n
+      string: "{\n  \"kind\": \"youtube#searchListResponse\",\n  \"etag\": \"QyPUzqg4XU41xdxO2itJQ9XCfWQ\",\n
         \ \"nextPageToken\": \"CAEQAA\",\n  \"regionCode\": \"US\",\n  \"pageInfo\":
-        {\n    \"totalResults\": 925,\n    \"resultsPerPage\": 1\n  },\n  \"items\":
-        [\n    {\n      \"kind\": \"youtube#searchResult\",\n      \"etag\": \"adX3x-95rpAzqh4XrzfYpafZkK4\",\n
+        {\n    \"totalResults\": 1095,\n    \"resultsPerPage\": 1\n  },\n  \"items\":
+        [\n    {\n      \"kind\": \"youtube#searchResult\",\n      \"etag\": \"_CGH5Gg59UefNhvz4ziqTKsTgL4\",\n
         \     \"id\": {\n        \"kind\": \"youtube#channel\",\n        \"channelId\":
         \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n      \"snippet\": {\n        \"publishedAt\":
         \"2007-08-23T00:34:43Z\",\n        \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n
@@ -38,7 +38,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Sat, 23 Aug 2025 02:28:19 GMT
+      - Fri, 29 Aug 2025 21:23:08 GMT
       Server:
       - scaffolding on HTTPServer2
       Transfer-Encoding:
@@ -86,7 +86,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Sat, 23 Aug 2025 02:28:19 GMT
+      - Fri, 29 Aug 2025 21:23:08 GMT
       Server:
       - scaffolding on HTTPServer2
       Transfer-Encoding:
@@ -119,10 +119,375 @@ interactions:
     uri: https://www.googleapis.com/youtube/v3/playlistItems?key=DUMMY&maxResults=50&part=snippet%2CcontentDetails&playlistId=UU_x5XG1OV2P6uZZ5FSM9Ttw
   response:
     body:
-      string: "{\n  \"kind\": \"youtube#playlistItemListResponse\",\n  \"etag\": \"PQUZb07aRiwrEh-gfz2deIGvJVs\",\n
-        \ \"nextPageToken\": \"EAAaHlBUOkNESWlFRGMyTUVNNU5EQkNSVGt3TmtFMU5qSQ\",\n
+      string: "{\n  \"kind\": \"youtube#playlistItemListResponse\",\n  \"etag\": \"v_8m7w0VXFXRj0Y0RbTUeWP3Dy8\",\n
+        \ \"nextPageToken\": \"EAAaHlBUOkNESWlFREl3UlROQ1JqUTNRVE15TVRCQk9EYw\",\n
         \ \"items\": [\n    {\n      \"kind\": \"youtube#playlistItem\",\n      \"etag\":
-        \"sgamBaiMQLDrSdSORJLohnHD_Lc\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LmEzNEphd19mckRj\",\n
+        \"bbL5QBADi7x-WZC6H408gC8QPZg\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LklZcHQyNUdIQjFV\",\n
+        \     \"snippet\": {\n        \"publishedAt\": \"2025-08-29T16:00:23Z\",\n
+        \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Power
+        up your LLMs: Gemini CLI and Model Context Protocol (MCP)\",\n        \"description\":
+        \"Level up your LLM game with Model Context Protocol (MCP)! Learn how MCP
+        allows your Large Language Models to interact with traditional computer programs,
+        expanding their functionality. This tutorial shows you how to build an MCP
+        server, connect it to Gemini CLI, and use it to retrieve additional information,
+        take actions on your behalf, or even generate videos.\\n\\nChapters:\\n0:00
+        - What is Model Context Protocol (MCP)?\\n0:55 - Building an MCP Server\\n2:18
+        - Connecting Gemini CLI to your MCP Server\\n3:21 - Connecting Gemini CLI
+        to Linear using OAuth\\n6:55 - Veo 3 MCP Server\\n\\nSubscribe to Google for
+        Developers \u2192 https://goo.gle/developers\\n\\nGitHub repository for video
+        creation: https://github.com/GoogleCloudPlatform/vertex-ai-creative-studio/tree/main/experiments/mcp-genmedia\\n\\nSpeaker:
+        Luke Schlangen \\nProducts Mentioned: Google AI, Gemini,  Generative AI\",\n
+        \       \"thumbnails\": {\n          \"default\": {\n            \"url\":
+        \"https://i.ytimg.com/vi/IYpt25GHB1U/default.jpg\",\n            \"width\":
+        120,\n            \"height\": 90\n          },\n          \"medium\": {\n
+        \           \"url\": \"https://i.ytimg.com/vi/IYpt25GHB1U/mqdefault.jpg\",\n
+        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/IYpt25GHB1U/hqdefault.jpg\",\n
+        \           \"width\": 480,\n            \"height\": 360\n          },\n          \"standard\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/IYpt25GHB1U/sddefault.jpg\",\n
+        \           \"width\": 640,\n            \"height\": 480\n          },\n          \"maxres\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/IYpt25GHB1U/maxresdefault.jpg\",\n
+        \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
+        \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 0,\n        \"resourceId\":
+        {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"IYpt25GHB1U\"\n
+        \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
+        \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
+        \     \"contentDetails\": {\n        \"videoId\": \"IYpt25GHB1U\",\n        \"videoPublishedAt\":
+        \"2025-08-29T16:00:23Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
+        \     \"etag\": \"tX5nOT4Tn0TahPM5VhRQzaip1V8\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LkgzQVZKNkh0Tk9F\",\n
+        \     \"snippet\": {\n        \"publishedAt\": \"2025-08-29T04:00:19Z\",\n
+        \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Task-focused
+        coding agents: The future of software developers\",\n        \"description\":
+        \"Focused coding agents can help streamline workflows for developers. However,
+        it\u2019s important to note that deep technical expertise is still needed
+        to use these systems effectively. Watch the full episode to five into task-focused
+        coding agents. \\n\\nWatch more People of AI \u2192 https://goo.gle/PAI \\nSubscribe
+        to Google for Developers \u2192 https://goo.gle/developers\\n\\n#PeopleofAI\\n\\nProducts
+        Mentioned: Google AI\",\n        \"thumbnails\": {\n          \"default\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/H3AVJ6HtNOE/default.jpg\",\n
+        \           \"width\": 120,\n            \"height\": 90\n          },\n          \"medium\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/H3AVJ6HtNOE/mqdefault.jpg\",\n
+        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/H3AVJ6HtNOE/hqdefault.jpg\",\n
+        \           \"width\": 480,\n            \"height\": 360\n          },\n          \"standard\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/H3AVJ6HtNOE/sddefault.jpg\",\n
+        \           \"width\": 640,\n            \"height\": 480\n          },\n          \"maxres\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/H3AVJ6HtNOE/maxresdefault.jpg\",\n
+        \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
+        \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 1,\n        \"resourceId\":
+        {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"H3AVJ6HtNOE\"\n
+        \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
+        \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
+        \     \"contentDetails\": {\n        \"videoId\": \"H3AVJ6HtNOE\",\n        \"videoPublishedAt\":
+        \"2025-08-29T04:00:19Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
+        \     \"etag\": \"pc8A3Rn_oTMmKXOH0r2ds5VB-B0\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LmJ2ZlR0THpXVlB3\",\n
+        \     \"snippet\": {\n        \"publishedAt\": \"2025-08-28T23:00:51Z\",\n
+        \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"The
+        evolved developer with Muhammad Farooq\",\n        \"description\": \"Meet
+        Muhammad Farooq, a machine learning engineer and a YouTuber on the channel
+        @engineerprompt, where he explains AI concepts and builds his own projects.
+        In this episode of People of AI, hosts Ashley and Christina chat with Muhammad
+        about his journey in tech, his open source project localGPT, and how he's
+        helping organizations deploy scalable AI solutions. \\n\\nChapters:\\n0:00
+        Intro\\n3:15 From Ph.D to YouTube Creator\\n4:50 First viral YouTube hit\\n8:20
+        RAG and why it matters\\n11:20 The origins of localGPT\\n15:20 What has changed
+        with building in the last 2 years\\n18:35 How AI tools and models have matured\\n19:50
+        Becoming a technical manager to LLMs\\n22:20 What agentic coding has enabled
+        Muhammad to build in localGPT 2.0\\n27:45 Better maintaining open source projects
+        by leveraging AI\\n28:50 What to watch out for when building with agentic
+        systems\\n31:20 Advice for junior developers\\n35:40 Differences between how
+        junior devs and senior devs use AI tools\\n39:19 Specs-driven development\\n41:20
+        Advice for experimenting with AI tools\\n42:50 The problem with overly-agreeable
+        LLMs\\n45:10 Why long-context windows are useful for coding\\n47:30 Advice
+        for someone launching a tech-focused YouTube channel\\n51:40 Rapid Fire Questions\\n\\nResources:\\n@engineerprompt
+        YouTube Channel \u2192 https://goo.gle/4m8HCmn \\nlocalGPT \u2192 https://goo.gle/45qwiuH
+        \\nlocalGPT 2.0 - Building the Best Private RAG System \u2192 https://goo.gle/4fwvyJb
+        \\nMuhammad\u2019s website \u2192 https://goo.gle/47aHaj9 \\nMuhammad on X
+        \u2192 https://goo.gle/4lraJjz \\nMeasuring the Impact of Early-2025  AI on
+        Experienced Open-Source Developer Productivity \u2192 https://goo.gle/4oqVGct
+        \\n\\nWatch more People of AI \u2192 https://goo.gle/PAI \\nSubscribe to Google
+        for Developers \u2192 https://goo.gle/developers\\n\\n#PeopleofAI\\n\\nSpeaker:
+        Christina Warren, Ashley Oldacre\\nProducts Mentioned: AI\",\n        \"thumbnails\":
+        {\n          \"default\": {\n            \"url\": \"https://i.ytimg.com/vi/bvfTtLzWVPw/default.jpg\",\n
+        \           \"width\": 120,\n            \"height\": 90\n          },\n          \"medium\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/bvfTtLzWVPw/mqdefault.jpg\",\n
+        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/bvfTtLzWVPw/hqdefault.jpg\",\n
+        \           \"width\": 480,\n            \"height\": 360\n          },\n          \"standard\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/bvfTtLzWVPw/sddefault.jpg\",\n
+        \           \"width\": 640,\n            \"height\": 480\n          },\n          \"maxres\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/bvfTtLzWVPw/maxresdefault.jpg\",\n
+        \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
+        \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 2,\n        \"resourceId\":
+        {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"bvfTtLzWVPw\"\n
+        \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
+        \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
+        \     \"contentDetails\": {\n        \"videoId\": \"bvfTtLzWVPw\",\n        \"videoPublishedAt\":
+        \"2025-08-28T23:00:51Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
+        \     \"etag\": \"EOBlS3WKArFfhHQdPFcrf4I2l7c\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LjBIMGMxSkhxVGpn\",\n
+        \     \"snippet\": {\n        \"publishedAt\": \"2025-08-28T16:00:02Z\",\n
+        \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Just
+        in from the news desk \U0001F4F0: Release of Dart 3.9 and Flutter 3.35\",\n
+        \       \"description\": \"Learn how you can accelerate building multiplatform
+        apps with the new Flutter and Dart releases. These updates put an emphasis
+        on accessibility, creative autonomy over your app, and more! \\n\\nResources:\\nDart
+        \u2192 https://goo.gle/4mTBdvd \\nFlutter \u2192https://goo.gle/3JkrGiC \\n\\nSubscribe
+        to Google for Developers \u2192 https://goo.gle/developers \\n\\n#GoogleDeveloperNews\\n\\nSpeaker:
+        Craig Labenz \\nProducts Mentioned:  Flutter\",\n        \"thumbnails\": {\n
+        \         \"default\": {\n            \"url\": \"https://i.ytimg.com/vi/0H0c1JHqTjg/default.jpg\",\n
+        \           \"width\": 120,\n            \"height\": 90\n          },\n          \"medium\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/0H0c1JHqTjg/mqdefault.jpg\",\n
+        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/0H0c1JHqTjg/hqdefault.jpg\",\n
+        \           \"width\": 480,\n            \"height\": 360\n          },\n          \"standard\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/0H0c1JHqTjg/sddefault.jpg\",\n
+        \           \"width\": 640,\n            \"height\": 480\n          },\n          \"maxres\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/0H0c1JHqTjg/maxresdefault.jpg\",\n
+        \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
+        \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 3,\n        \"resourceId\":
+        {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"0H0c1JHqTjg\"\n
+        \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
+        \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
+        \     \"contentDetails\": {\n        \"videoId\": \"0H0c1JHqTjg\",\n        \"videoPublishedAt\":
+        \"2025-08-28T16:00:02Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
+        \     \"etag\": \"e40ai9-iyIz-0URBjUGvn126mXA\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LkR0T2VFcWFzUVlz\",\n
+        \     \"snippet\": {\n        \"publishedAt\": \"2025-08-28T04:00:29Z\",\n
+        \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Why
+        using DRY (Don\u2019t Repeat Yourself) too early can work against you!\",\n
+        \       \"description\": \"Premature abstraction is a common mistake when
+        jumping into DRY too early. Clean code may look nice, but premature abstractions
+        become a headache, especially when it\u2019s time to update methods. \\n\\nSubscribe
+        to Google for Developers \u2192 https://goo.gle/developers \\n\\nSpeaker:
+        Ethan Hsu\",\n        \"thumbnails\": {\n          \"default\": {\n            \"url\":
+        \"https://i.ytimg.com/vi/DtOeEqasQYs/default.jpg\",\n            \"width\":
+        120,\n            \"height\": 90\n          },\n          \"medium\": {\n
+        \           \"url\": \"https://i.ytimg.com/vi/DtOeEqasQYs/mqdefault.jpg\",\n
+        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/DtOeEqasQYs/hqdefault.jpg\",\n
+        \           \"width\": 480,\n            \"height\": 360\n          },\n          \"standard\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/DtOeEqasQYs/sddefault.jpg\",\n
+        \           \"width\": 640,\n            \"height\": 480\n          },\n          \"maxres\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/DtOeEqasQYs/maxresdefault.jpg\",\n
+        \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
+        \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 4,\n        \"resourceId\":
+        {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"DtOeEqasQYs\"\n
+        \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
+        \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
+        \     \"contentDetails\": {\n        \"videoId\": \"DtOeEqasQYs\",\n        \"videoPublishedAt\":
+        \"2025-08-28T04:00:29Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
+        \     \"etag\": \"CDIp3t-VwfHYZeE0k9yFNOgdfgo\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LkFOcFFFY19mV1VV\",\n
+        \     \"snippet\": {\n        \"publishedAt\": \"2025-08-27T17:00:40Z\",\n
+        \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Evaluate
+        your AI with Stax\",\n        \"description\": \"Building with generative
+        AI doesn't have to rely on gut feelings. Discover Stax, an AI evaluation platform
+        designed for product builders. Learn how to turn subjective manual processes
+        into repeatable, data-driven evaluations, and codify the unique qualities
+        that make your AI product special. See how Stax works with a demo building
+        an AI travel agent. Moreover, see how you can ship your LLM features faster
+        and with greater confidence.\\n\\nResources: \\nTry Stax\u2192https://goo.gle/45RU5Ek
+        \\nSubscribe to Google for Developers \u2192 https://goo.gle/developers \\n\\n#GoogleDeveloperNews
+        \\n\\nSpeaker: Sara Wiltberger \\nProducts Mentioned: Google AI, Gemma,\",\n
+        \       \"thumbnails\": {\n          \"default\": {\n            \"url\":
+        \"https://i.ytimg.com/vi/ANpQEc_fWUU/default.jpg\",\n            \"width\":
+        120,\n            \"height\": 90\n          },\n          \"medium\": {\n
+        \           \"url\": \"https://i.ytimg.com/vi/ANpQEc_fWUU/mqdefault.jpg\",\n
+        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/ANpQEc_fWUU/hqdefault.jpg\",\n
+        \           \"width\": 480,\n            \"height\": 360\n          },\n          \"standard\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/ANpQEc_fWUU/sddefault.jpg\",\n
+        \           \"width\": 640,\n            \"height\": 480\n          },\n          \"maxres\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/ANpQEc_fWUU/maxresdefault.jpg\",\n
+        \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
+        \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 5,\n        \"resourceId\":
+        {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"ANpQEc_fWUU\"\n
+        \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
+        \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
+        \     \"contentDetails\": {\n        \"videoId\": \"ANpQEc_fWUU\",\n        \"videoPublishedAt\":
+        \"2025-08-27T17:00:40Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
+        \     \"etag\": \"hnKZ8JgkXqGp783jVOIQL4QJXNU\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LjR6VzBpU2tNSFlN\",\n
+        \     \"snippet\": {\n        \"publishedAt\": \"2025-08-27T17:00:26Z\",\n
+        \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"How
+        to create custom AI evaluators in Stax\",\n        \"description\": \"Move
+        beyond common criteria for evaluating generative AI. This video will show
+        you how to create custom evaluators in Stax to measure what's most important
+        for your AI products. Learn how to automate evaluations with LLM-based autoraters,
+        define the base LLM, craft prompts, and map rating categories to metrics,
+        so you can scale your evaluations with confidence.\\n\\nResources:\\n\\nTry
+        Stax \u2192 https://goo.gle/3HMddv9 \\nSubscribe to Google for Developers
+        \u2192 https://goo.gle/developers \\n\\nProducts Mentioned: Google AI\",\n
+        \       \"thumbnails\": {\n          \"default\": {\n            \"url\":
+        \"https://i.ytimg.com/vi/4zW0iSkMHYM/default.jpg\",\n            \"width\":
+        120,\n            \"height\": 90\n          },\n          \"medium\": {\n
+        \           \"url\": \"https://i.ytimg.com/vi/4zW0iSkMHYM/mqdefault.jpg\",\n
+        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/4zW0iSkMHYM/hqdefault.jpg\",\n
+        \           \"width\": 480,\n            \"height\": 360\n          },\n          \"standard\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/4zW0iSkMHYM/sddefault.jpg\",\n
+        \           \"width\": 640,\n            \"height\": 480\n          },\n          \"maxres\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/4zW0iSkMHYM/maxresdefault.jpg\",\n
+        \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
+        \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 6,\n        \"resourceId\":
+        {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"4zW0iSkMHYM\"\n
+        \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
+        \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
+        \     \"contentDetails\": {\n        \"videoId\": \"4zW0iSkMHYM\",\n        \"videoPublishedAt\":
+        \"2025-08-27T17:00:26Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
+        \     \"etag\": \"pjOvezkAADQcTBkSb01Dd9-OEvA\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3Lkg2Wlh1akUxcUJB\",\n
+        \     \"snippet\": {\n        \"publishedAt\": \"2025-08-27T01:00:13Z\",\n
+        \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Behind
+        the scenes of Google's state-of-the-art \\\"nano-banana\\\" image model\",\n
+        \       \"description\": \"Join host Logan Kilpatrick in discussion with some
+        of the minds behind Google's new state-of-the-art image model, Gemini 2.5
+        Flash. Product and research leads from the Gemini team break down the technology
+        behind its key capabilities, including interleaved generation for complex
+        edits and new approaches to achieving character consistency and pixel-perfect
+        control. With Nicole Brichtova, Kaushik Shivakumar, Mostafa Dehghani and Robert
+        Riachi. \\n\\nListen to this podcast: \\nApple Podcasts \u2192 https://goo.gle/3Bm7QzQ
+        \\nSpotify \u2192 https://goo.gle/3ZL3ADl \\n\\nChapters:\\n0:37 - New model
+        introduction\\n1:21 -Demo: Image editing\\n3:44 - Text rendering capabilities\\n4:44
+        Beyond human preference evals\\n6:44 - Text rendering as a proxy for quality\\n8:38
+        - Positive transfer between modalities \\n11:25 - Demo: multi-turn, context
+        aware image generation\\n13:54 - Pixel-perfect editing and character consistency\\n15:51
+        - Interleaved image generation \\n17:59 - Specialized vs. native models\\n19:52
+        - Understanding nuanced prompts\\n20:59 - User feedback shaping model development\\n22:37
+        - Improvements in character consistency \\n24:17 - More natural looking images
+        from team collaboration\\n26:41 - What\u2019s next for image generation models\\n\\nSubscribe
+        to Google for Developers \u2192 https://goo.gle/developers \\n\\nSpeakers:
+        Logan Kilpatrick, Nicole Brichtova, Kaushik Shivakumar, Mostafa Dehghani,
+        Robert Riachi\\n\\nProducts Mentioned:  Google AI, Gemini\",\n        \"thumbnails\":
+        {\n          \"default\": {\n            \"url\": \"https://i.ytimg.com/vi/H6ZXujE1qBA/default.jpg\",\n
+        \           \"width\": 120,\n            \"height\": 90\n          },\n          \"medium\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/H6ZXujE1qBA/mqdefault.jpg\",\n
+        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/H6ZXujE1qBA/hqdefault.jpg\",\n
+        \           \"width\": 480,\n            \"height\": 360\n          },\n          \"standard\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/H6ZXujE1qBA/sddefault.jpg\",\n
+        \           \"width\": 640,\n            \"height\": 480\n          }\n        },\n
+        \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 7,\n        \"resourceId\":
+        {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"H6ZXujE1qBA\"\n
+        \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
+        \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
+        \     \"contentDetails\": {\n        \"videoId\": \"H6ZXujE1qBA\",\n        \"videoPublishedAt\":
+        \"2025-08-27T01:00:13Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
+        \     \"etag\": \"mPZq27NXiadtbhz2NLmlGeFBQc0\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LlVFLXhlOHk4RUo4\",\n
+        \     \"snippet\": {\n        \"publishedAt\": \"2025-08-26T21:06:34Z\",\n
+        \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Upgrade
+        your workflow with agentic coding\",\n        \"description\": \"Use AI to
+        help you code more efficiently by trying out agentic, asynchronous coding!
+        \ \\n\\nResources: \\nBuild with Jules, your asynchronous coding agent \u2192
+        https://goo.gle/3HTt3El \\n\\nSubscribe to Google for Developers \u2192 https://goo.gle/developers
+        \\n\\nSpeaker: Itzak Hinojosa\\nProducts Mentioned: Google AI\",\n        \"thumbnails\":
+        {\n          \"default\": {\n            \"url\": \"https://i.ytimg.com/vi/UE-xe8y8EJ8/default.jpg\",\n
+        \           \"width\": 120,\n            \"height\": 90\n          },\n          \"medium\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/UE-xe8y8EJ8/mqdefault.jpg\",\n
+        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/UE-xe8y8EJ8/hqdefault.jpg\",\n
+        \           \"width\": 480,\n            \"height\": 360\n          },\n          \"standard\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/UE-xe8y8EJ8/sddefault.jpg\",\n
+        \           \"width\": 640,\n            \"height\": 480\n          },\n          \"maxres\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/UE-xe8y8EJ8/maxresdefault.jpg\",\n
+        \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
+        \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 8,\n        \"resourceId\":
+        {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"UE-xe8y8EJ8\"\n
+        \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
+        \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
+        \     \"contentDetails\": {\n        \"videoId\": \"UE-xe8y8EJ8\",\n        \"videoPublishedAt\":
+        \"2025-08-26T21:06:34Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
+        \     \"etag\": \"U9k92NAfkH26TH1iBzuP-mr83Sk\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LkJpLXdpMnFfWG9n\",\n
+        \     \"snippet\": {\n        \"publishedAt\": \"2025-08-26T17:50:11Z\",\n
+        \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Building
+        with Gemini 2.5 Flash Image in Google AI Studio\",\n        \"description\":
+        \"Explore the powerful new Gemini 2.5 Image Gen model and its integration
+        with AI Studio in this in-depth live demonstration. See how \\\"vibe coding\\\"
+        enables you to design and adapt image generation applets with ease, featuring
+        precise edits, decor, and design capabilities. The session also includes an
+        interactive Q&A and a look at upcoming AI Studio updates.\\n\\nChapters:\\n0:00
+        - Intro and Demo: \\\"Past Forward\\\" App\\n4:22 - Demo: \\\"Home Canvas\\\"
+        for interior design\\n13:00 - Demo: Photo editing app\\n19:13 - AI Studio
+        updates & new model picker\\n27:50 - Model deep dive with PM\\n34:18 - More
+        apps to remix\\n37:22 - Sharing and deploying apps in AI Studio\\n42:02 -
+        Conclusion\\n\\n\\nFor more on our new model, check out this episode of Release
+        Notes: https://www.youtube.com/watch?v=H6ZXujE1qBA\\n\\nTry coding with applets:
+        ai.studio/apps \\nFollow AI Studio on X: @googleaistudio\\nSubscribe to Google
+        for Developers \u2192 https://goo.gle/developers \\n\\nSpeaker: Logan Kilpatrick,
+        Ammaar Reshi, Kat Kampf\\nProducts Mentioned:  Google AI, Gemini\",\n        \"thumbnails\":
+        {\n          \"default\": {\n            \"url\": \"https://i.ytimg.com/vi/Bi-wi2q_Xog/default.jpg\",\n
+        \           \"width\": 120,\n            \"height\": 90\n          },\n          \"medium\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/Bi-wi2q_Xog/mqdefault.jpg\",\n
+        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/Bi-wi2q_Xog/hqdefault.jpg\",\n
+        \           \"width\": 480,\n            \"height\": 360\n          },\n          \"standard\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/Bi-wi2q_Xog/sddefault.jpg\",\n
+        \           \"width\": 640,\n            \"height\": 480\n          },\n          \"maxres\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/Bi-wi2q_Xog/maxresdefault.jpg\",\n
+        \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
+        \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 9,\n        \"resourceId\":
+        {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"Bi-wi2q_Xog\"\n
+        \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
+        \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
+        \     \"contentDetails\": {\n        \"videoId\": \"Bi-wi2q_Xog\",\n        \"videoPublishedAt\":
+        \"2025-08-26T17:50:11Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
+        \     \"etag\": \"DUt_QNVYCAkMHPRqKMLLXOWynWw\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3Lks3ck5LaHJRNHhv\",\n
+        \     \"snippet\": {\n        \"publishedAt\": \"2025-08-26T04:00:19Z\",\n
+        \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Rating
+        things my manager said to me\",\n        \"description\": \"We\u2019re rating
+        stuff our manager has said to us. Can you relate? \\n\\nSubscribe to Google
+        for Developers \u2192 https://goo.gle/developers \\n\\nSpeakers: Sagar Kothari,
+        Tushara Langulya Balabolu\",\n        \"thumbnails\": {\n          \"default\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/K7rNKhrQ4xo/default.jpg\",\n
+        \           \"width\": 120,\n            \"height\": 90\n          },\n          \"medium\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/K7rNKhrQ4xo/mqdefault.jpg\",\n
+        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/K7rNKhrQ4xo/hqdefault.jpg\",\n
+        \           \"width\": 480,\n            \"height\": 360\n          },\n          \"standard\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/K7rNKhrQ4xo/sddefault.jpg\",\n
+        \           \"width\": 640,\n            \"height\": 480\n          },\n          \"maxres\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/K7rNKhrQ4xo/maxresdefault.jpg\",\n
+        \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
+        \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 10,\n        \"resourceId\":
+        {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"K7rNKhrQ4xo\"\n
+        \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
+        \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
+        \     \"contentDetails\": {\n        \"videoId\": \"K7rNKhrQ4xo\",\n        \"videoPublishedAt\":
+        \"2025-08-26T04:00:19Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
+        \     \"etag\": \"Ee6c0ssHR-hc20TdD-aDj9jEaYU\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LnN4ZUN4ZzFiLTVr\",\n
+        \     \"snippet\": {\n        \"publishedAt\": \"2025-08-25T13:01:36Z\",\n
+        \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"What
+        will each of these lines log to the console and why? Go!\",\n        \"description\":
+        \"These three simple console.log statements reveal how JavaScript handles
+        the plus operator with different data types. Can you explain why each one
+        behaves the way it does? Let us know in the comments.\\n\\nSubscribe to Google
+        for Developers \u2192 https://goo.gle/developers \\n\\nSpeaker: Amanda Stanton\",\n
+        \       \"thumbnails\": {\n          \"default\": {\n            \"url\":
+        \"https://i.ytimg.com/vi/sxeCxg1b-5k/default.jpg\",\n            \"width\":
+        120,\n            \"height\": 90\n          },\n          \"medium\": {\n
+        \           \"url\": \"https://i.ytimg.com/vi/sxeCxg1b-5k/mqdefault.jpg\",\n
+        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/sxeCxg1b-5k/hqdefault.jpg\",\n
+        \           \"width\": 480,\n            \"height\": 360\n          },\n          \"standard\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/sxeCxg1b-5k/sddefault.jpg\",\n
+        \           \"width\": 640,\n            \"height\": 480\n          },\n          \"maxres\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/sxeCxg1b-5k/maxresdefault.jpg\",\n
+        \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
+        \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 11,\n        \"resourceId\":
+        {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"sxeCxg1b-5k\"\n
+        \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
+        \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
+        \     \"contentDetails\": {\n        \"videoId\": \"sxeCxg1b-5k\",\n        \"videoPublishedAt\":
+        \"2025-08-25T13:01:36Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
+        \     \"etag\": \"q7Sng2pvqkFHrCXrzJ69wOGtKVU\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LmEzNEphd19mckRj\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-08-22T04:00:01Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Solving
         problems with code\",\n        \"description\": \"What's the best thing about
@@ -142,13 +507,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/a34Jaw_frDc/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 0,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 12,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"a34Jaw_frDc\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"a34Jaw_frDc\",\n        \"videoPublishedAt\":
         \"2025-08-22T04:00:01Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"v_eECHIH9Sdnzq1Lio-Vxf3fJYc\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3Llc3Wnp1aVgzQ2M0\",\n
+        \     \"etag\": \"Vscd0rx3YXVGbpl7TmjqIrCoojg\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3Llc3Wnp1aVgzQ2M0\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-08-21T16:00:51Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Kaggle
         Game Arena, AI tools in Firebase Studio, and more! - Google Developer News
@@ -183,13 +548,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/W7ZzuiX3Cc4/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 1,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 13,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"W7ZzuiX3Cc4\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"W7ZzuiX3Cc4\",\n        \"videoPublishedAt\":
         \"2025-08-21T16:00:51Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"TUXhjAy-2jt1ECgjUXkfuHfZjyo\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LmZYYWV1dEVnanc0\",\n
+        \     \"etag\": \"jWrt_AlPttA2uwgjJ4o1utB3tYA\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LmZYYWV1dEVnanc0\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-08-21T04:00:46Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Maybe
         I need a hug to fix the bug? Actually, a nap sounds better.\",\n        \"description\":
@@ -208,13 +573,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/fXaeutEgjw4/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 2,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 14,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"fXaeutEgjw4\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"fXaeutEgjw4\",\n        \"videoPublishedAt\":
         \"2025-08-21T04:00:46Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"xiB3U_TTwGC-76UHttfabNc1dik\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LjhEaGhaOEkyTkFJ\",\n
+        \     \"etag\": \"WXzA04rGqwZxnRClBjr8B17s_cE\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LjhEaGhaOEkyTkFJ\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-08-20T04:00:09Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Can
         you tell I work at Google?\",\n        \"description\": \"At Google, we love
@@ -232,13 +597,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/8DhhZ8I2NAI/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 3,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 15,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"8DhhZ8I2NAI\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"8DhhZ8I2NAI\",\n        \"videoPublishedAt\":
         \"2025-08-20T04:00:09Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"EDzy4ZS5gR4RiSDwzS1YaIa00jA\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LnQwTXJhRjQ1QU9Z\",\n
+        \     \"etag\": \"260ace8yYcGvaen408VkIBigDNU\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LnQwTXJhRjQ1QU9Z\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-08-19T21:40:30Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Talking
         to computers\",\n        \"description\": \"Thanks to recent advances in AI,
@@ -258,13 +623,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/t0MraF45AOY/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 4,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 16,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"t0MraF45AOY\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"t0MraF45AOY\",\n        \"videoPublishedAt\":
         \"2025-08-19T21:40:30Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"7nrptyByVR25S0C7DgIH0n4lTkQ\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LjlXM0NWVVR1UWV3\",\n
+        \     \"etag\": \"Ts6eQF79Ytjnes9xd83tiY5A-DM\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LjlXM0NWVVR1UWV3\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-08-19T16:00:23Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"What's
         on the news desk for Google Developers this month? Take a peek!\",\n        \"description\":
@@ -284,13 +649,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/9W3CVUTuQew/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 5,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 17,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"9W3CVUTuQew\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"9W3CVUTuQew\",\n        \"videoPublishedAt\":
         \"2025-08-19T16:00:23Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"XRK4UTTSJf2pA_cKUpee1RI3S-k\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LnZDeEhDRGJPUzlB\",\n
+        \     \"etag\": \"M0HkcohfJKj2CPdD-B1llEV5gqY\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LnZDeEhDRGJPUzlB\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-08-19T01:00:50Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Vibe
         coding\",\n        \"description\": \"The lighting, music, and selection of
@@ -309,13 +674,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/vCxHCDbOS9A/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 6,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 18,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"vCxHCDbOS9A\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"vCxHCDbOS9A\",\n        \"videoPublishedAt\":
         \"2025-08-19T01:00:50Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"tLOFha-qkZp7IRcxbyvSL7aTsFA\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LkUwaHJjRE8zTm9j\",\n
+        \     \"etag\": \"eOeZ9-kCMtIrmFTuKRfuqkGhOIc\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LkUwaHJjRE8zTm9j\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-08-18T19:17:20Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Introducing
         Opal\",\n        \"description\": \"Discover Opal, a new experimental tool
@@ -336,13 +701,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/E0hrcDO3Noc/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 7,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 19,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"E0hrcDO3Noc\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"E0hrcDO3Noc\",\n        \"videoPublishedAt\":
         \"2025-08-18T19:17:20Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"sGWhymrLuXBmc0lp4DI8xoqNfcQ\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LmlQMmxtMndkbFFn\",\n
+        \     \"etag\": \"AtFfdQzeYC6TFI_hAay29kUrYng\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LmlQMmxtMndkbFFn\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-08-18T13:01:17Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"What
         is wrong with the timing issue and how can it be fixed? Go!\",\n        \"description\":
@@ -364,13 +729,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/iP2lm2wdlQg/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 8,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 20,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"iP2lm2wdlQg\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"iP2lm2wdlQg\",\n        \"videoPublishedAt\":
         \"2025-08-18T13:01:17Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"PpqZLOAIYHFlGTOHofAnpAVOuyA\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LjJVODljTHc0dS1B\",\n
+        \     \"etag\": \"UWwzoS3OwyoPugYlgEYj2Ap5_NU\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LjJVODljTHc0dS1B\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-08-14T16:00:04Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Just
         in from the news desk \U0001F4F0: Updates to Firebase Studio for full-stack
@@ -392,13 +757,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/2U89cLw4u-A/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 9,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 21,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"2U89cLw4u-A\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"2U89cLw4u-A\",\n        \"videoPublishedAt\":
         \"2025-08-14T16:00:04Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"TuZrXo7rexPh6ASGaJA412o-jHY\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LlBvZnhfVEtFY2Uw\",\n
+        \     \"etag\": \"3jx0tVpePfWxR9MCLFq1d_86CTY\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LlBvZnhfVEtFY2Uw\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-08-13T01:00:32Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Using
         AI to analyze cricket swings\",\n        \"description\": \"Check out the
@@ -419,13 +784,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/Pofx_TKEce0/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 10,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 22,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"Pofx_TKEce0\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"Pofx_TKEce0\",\n        \"videoPublishedAt\":
         \"2025-08-13T01:00:32Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"gthvohl3HEl2KKgGclq3O2mukso\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LnlaUjNpc2NpV2Q4\",\n
+        \     \"etag\": \"fpfbGDWnpxk0Z6gy-7NGfYy3PVc\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LnlaUjNpc2NpV2Q4\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-08-12T16:01:40Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Automate
         issue triage & pull request reviews with Gemini CLI Github Action\",\n        \"description\":
@@ -452,13 +817,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/yZR3isciWd8/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 11,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 23,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"yZR3isciWd8\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"yZR3isciWd8\",\n        \"videoPublishedAt\":
         \"2025-08-12T16:01:40Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"lW9xQhuOGzxKK7OU-Y6N7OouS-c\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3Lm5qRG9jaFEyekhz\",\n
+        \     \"etag\": \"jqWgVF1CnMPsEIHqDC7AI5IaDqA\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3Lm5qRG9jaFEyekhz\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-08-11T17:00:17Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Demis
         Hassabis on shipping momentum, better evals and world models\",\n        \"description\":
@@ -488,13 +853,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/njDochQ2zHs/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 12,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 24,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"njDochQ2zHs\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"njDochQ2zHs\",\n        \"videoPublishedAt\":
         \"2025-08-11T17:00:17Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"BagL0V4KA6FwNxH2MIBPwBJJVyQ\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LjctcF81R1ZpMlBV\",\n
+        \     \"etag\": \"HmvUrvHOAdkIdWdSAuE-iZWOn-M\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LjctcF81R1ZpMlBV\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-08-11T13:00:25Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"What
         is the minimum time to deploy all services? How would you schedule them across
@@ -515,13 +880,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/7-p_5GVi2PU/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 13,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 25,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"7-p_5GVi2PU\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"7-p_5GVi2PU\",\n        \"videoPublishedAt\":
         \"2025-08-11T13:00:25Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"1VABGiagEbLYGCihwUyDGNVqkfU\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3Lmh3TGdHY3dVVGs4\",\n
+        \     \"etag\": \"Zb4Wyr8lTIwMC_RC-R2W70aAvSc\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3Lmh3TGdHY3dVVGs4\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-08-08T19:00:48Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Which
         new tools are you most excited to build with?\",\n        \"description\":
@@ -539,13 +904,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/hwLgGcwUTk8/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 14,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 26,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"hwLgGcwUTk8\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"hwLgGcwUTk8\",\n        \"videoPublishedAt\":
         \"2025-08-08T19:00:48Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"MdXWFj5u5RzK-E1yEhOALBhB1YM\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LlltekhVUVJQZzBr\",\n
+        \     \"etag\": \"srw9sL3RfdUrorXNA8ZrMKLMl_Q\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LlltekhVUVJQZzBr\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-08-07T23:00:40Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Improve
         web accessibility! Start here.\",\n        \"description\": \"Accessible design
@@ -564,13 +929,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/YmzHUQRPg0k/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 15,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 27,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"YmzHUQRPg0k\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"YmzHUQRPg0k\",\n        \"videoPublishedAt\":
         \"2025-08-07T23:00:40Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"nqC89zrvehS9BXmiGUL4RmzgIbQ\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3Li1taUNVNkZHZk1n\",\n
+        \     \"etag\": \"GS-vb_m0RQkzKcZbfrp63qMQdEs\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3Li1taUNVNkZHZk1n\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-08-07T17:08:38Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Get
         code samples, AI patterns, and prompt libraries to help you build with Angular\",\n
@@ -594,13 +959,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/-miCU6FGfMg/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 16,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 28,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"-miCU6FGfMg\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"-miCU6FGfMg\",\n        \"videoPublishedAt\":
         \"2025-08-07T17:08:38Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"sgI2pIp2eTcCUv6IyjhpYu2-S8M\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LkFWdUZOanlVNFBj\",\n
+        \     \"etag\": \"B4tbdVE6rTw6pGVIcSq16ItxIPo\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LkFWdUZOanlVNFBj\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-08-07T01:00:10Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"POV:
         You've been coding solo for years and suddenly a wild programmer appears.\",\n
@@ -618,13 +983,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/AVuFNjyU4Pc/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 17,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 29,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"AVuFNjyU4Pc\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"AVuFNjyU4Pc\",\n        \"videoPublishedAt\":
         \"2025-08-07T01:00:10Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"0KIfhI5s8Tf7czZIpB37q5cDIuY\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3Lm5fZmIydDhRTEFz\",\n
+        \     \"etag\": \"3fVTaRRQ7GogzFsM7UlQxVa9wys\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3Lm5fZmIydDhRTEFz\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-08-06T16:03:40Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Just
         in from the news desk \U0001F4F0: Tune into the Kaggle Game Arena\",\n        \"description\":
@@ -648,13 +1013,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/n_fb2t8QLAs/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 18,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 30,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"n_fb2t8QLAs\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"n_fb2t8QLAs\",\n        \"videoPublishedAt\":
         \"2025-08-06T16:03:40Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"QPSip9XQpXJypCv8C1XPT2UY9p4\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LjR4bHdsVTZoLXdN\",\n
+        \     \"etag\": \"mCGzu2_G7iLLVFVGCIvk97r2SSg\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LjR4bHdsVTZoLXdN\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-08-05T23:00:16Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Building
         real-time voice applications with Live API\",\n        \"description\": \"Shrestha
@@ -686,13 +1051,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/4xlwlU6h-wM/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 19,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 31,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"4xlwlU6h-wM\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"4xlwlU6h-wM\",\n        \"videoPublishedAt\":
         \"2025-08-05T23:00:16Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"QYajx_PodldLOq61fYINPhLaG8U\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LjVSUnh1N1FCY3ZJ\",\n
+        \     \"etag\": \"cc4EXLb6rxoujfZBrQXA27mR64k\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LjVSUnh1N1FCY3ZJ\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-08-05T01:00:09Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Level
         up your code: 3 practices for success\",\n        \"description\": \"What
@@ -711,13 +1076,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/5RRxu7QBcvI/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 20,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 32,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"5RRxu7QBcvI\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"5RRxu7QBcvI\",\n        \"videoPublishedAt\":
         \"2025-08-05T01:00:09Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"ijaVqsV-_KxaTsXwBzvRm6sTsEo\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LjBsQlNqTkJ1UVg0\",\n
+        \     \"etag\": \"XSn9sS9P443e3JvqMKP2-lMmaBo\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LjBsQlNqTkJ1UVg0\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-08-04T13:00:06Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"What
         will this print and why doesn\u2019t it change when updated? Go!\",\n        \"description\":
@@ -737,13 +1102,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/0lBSjNBuQX4/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 21,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 33,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"0lBSjNBuQX4\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"0lBSjNBuQX4\",\n        \"videoPublishedAt\":
         \"2025-08-04T13:00:06Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"t1OcryzEkTG-4KRHEm-8fxSdLIY\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LlptdGJ6RVl4Qnow\",\n
+        \     \"etag\": \"h9stelf3c6s6U5LPflvWqYrkbxM\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LlptdGJ6RVl4Qnow\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-08-01T19:00:38Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"How
         has your AI use changed over the past year? \U0001F914\",\n        \"description\":
@@ -761,13 +1126,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/ZmtbzEYxBz0/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 22,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 34,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"ZmtbzEYxBz0\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"ZmtbzEYxBz0\",\n        \"videoPublishedAt\":
         \"2025-08-01T19:00:38Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"7Dm5o688UaX_4DKwpTan0iWnhxM\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LnJ2STFnYi1VQTIw\",\n
+        \     \"etag\": \"TgIgENLojmOZmBnnmUk8nq4SmK8\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LnJ2STFnYi1VQTIw\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-07-31T23:00:56Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Just
         in from the news desk \U0001F4F0: Just in from the news desk: Gemma 3n for
@@ -791,13 +1156,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/rvI1gb-UA20/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 23,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 35,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"rvI1gb-UA20\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"rvI1gb-UA20\",\n        \"videoPublishedAt\":
         \"2025-07-31T23:00:56Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"_9LZ0TNiSQTfHWyE-CFJyFVIoJc\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LmQ2OTc1cG1XZnI0\",\n
+        \     \"etag\": \"BC-YaVbgHhnTLygm1qqghMHHiJI\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LmQ2OTc1cG1XZnI0\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-07-31T04:00:50Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"App
         loading slowly? Unoptimized images may be the cause. \u261D\uFE0F (3 tips
@@ -816,13 +1181,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/d6975pmWfr4/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 24,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 36,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"d6975pmWfr4\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"d6975pmWfr4\",\n        \"videoPublishedAt\":
         \"2025-07-31T04:00:50Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"jKGQiatyq6jgveaIYnEeOqmrlEU\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LmFILS1fOC0yVGRF\",\n
+        \     \"etag\": \"sabLJYNHmz3NcAbqtAXGpOz0AaI\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LmFILS1fOC0yVGRF\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-07-30T19:00:01Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Generalist
         or specialist? Pick a side \U0001F440\",\n        \"description\": \"When
@@ -839,13 +1204,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/aH--_8-2TdE/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 25,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 37,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"aH--_8-2TdE\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"aH--_8-2TdE\",\n        \"videoPublishedAt\":
         \"2025-07-30T19:00:01Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"FPMYdL1x0Fv8ma3R4yRV4iicRoY\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LkZJSkQ4ZFNyRTJ3\",\n
+        \     \"etag\": \"XRoXo79hr9YGiL5Ze8Ge2nwaBVQ\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LkZJSkQ4ZFNyRTJ3\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-07-30T01:00:19Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Stop
         rewriting code every time product requirements shift!\",\n        \"description\":
@@ -865,13 +1230,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/FIJD8dSrE2w/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 26,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 38,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"FIJD8dSrE2w\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"FIJD8dSrE2w\",\n        \"videoPublishedAt\":
         \"2025-07-30T01:00:19Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"gTXnm3s7qWhgQK5jMVqcL3UhsUc\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3Ljl0cWNxMWJ3bTlv\",\n
+        \     \"etag\": \"AitDSZewiTUYgunm1DQzcD4yYuw\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3Ljl0cWNxMWJ3bTlv\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-07-29T19:00:31Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Gemini
         Code Assist: How to customize a public style guide and apply it to your whole
@@ -891,13 +1256,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/9tqcq1bwm9o/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 27,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 39,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"9tqcq1bwm9o\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"9tqcq1bwm9o\",\n        \"videoPublishedAt\":
         \"2025-07-29T19:00:31Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"-fxDxPMu-oudcUUAmHA8rgR5mpQ\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LjUxZnctU0xsd1Bn\",\n
+        \     \"etag\": \"tyxGjTEN7GGBGv9YrPufC1Oj2vA\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LjUxZnctU0xsd1Bn\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-07-29T16:00:10Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"How
         to keep your mobile app responsive: background threads\",\n        \"description\":
@@ -917,13 +1282,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/51fw-SLlwPg/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 28,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 40,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"51fw-SLlwPg\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"51fw-SLlwPg\",\n        \"videoPublishedAt\":
         \"2025-07-29T16:00:10Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"DYff9IFyWDc1Bd4kjMcqfYxs1Cc\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LnhtVDhIaUIybzhV\",\n
+        \     \"etag\": \"ZHrOlimFi3rfRy-iZ3_6TY6Fp1s\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LnhtVDhIaUIybzhV\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-07-29T01:00:54Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Red
         flag or green flag? (I/O Connect Berlin)\",\n        \"description\": \"We
@@ -942,13 +1307,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/xmT8HiB2o8U/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 29,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 41,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"xmT8HiB2o8U\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"xmT8HiB2o8U\",\n        \"videoPublishedAt\":
         \"2025-07-29T01:00:54Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"2REfAQyk0eFMWHklqfTgiYrLGpE\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LkhxQ29iXzRoeGpF\",\n
+        \     \"etag\": \"DetAoaixAdzyq2lhJONorbqrbTc\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LkhxQ29iXzRoeGpF\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-07-28T16:02:51Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Does
         any language beat Python here in both character count and readability? Go!\",\n
@@ -969,13 +1334,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/HqCob_4hxjE/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 30,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 42,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"HqCob_4hxjE\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"HqCob_4hxjE\",\n        \"videoPublishedAt\":
         \"2025-07-28T16:02:51Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"jA7FfbRLAnDLEmHHuoALIT9YGME\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LlNxVGw3ZkZ0cWlR\",\n
+        \     \"etag\": \"YwFh8azdATTvtC74eghVguGcnIk\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LlNxVGw3ZkZ0cWlR\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-07-26T16:00:48Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Talk
         to Gemini with the Live API - Race car demo\",\n        \"description\": \"See
@@ -997,13 +1362,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/SqTl7fFtqiQ/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 31,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 43,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"SqTl7fFtqiQ\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"SqTl7fFtqiQ\",\n        \"videoPublishedAt\":
         \"2025-07-26T16:00:48Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"bp8Z5OopupwkuC_8jPCYlO2ucvc\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LnZmei1Ra2xjelJJ\",\n
+        \     \"etag\": \"fmhtEneR5x0g3ne-t240J1chbDs\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LnZmei1Ra2xjelJJ\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-07-26T01:01:03Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Top
         #GoogleIO takeaway? \U0001F4A1\",\n        \"description\": \"We asked some
@@ -1021,13 +1386,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/vfz-QklczRI/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 32,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 44,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"vfz-QklczRI\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"vfz-QklczRI\",\n        \"videoPublishedAt\":
         \"2025-07-26T01:01:03Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"_YC3a1d_kjoRhWXLg2KnY00UYKQ\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LmZUQ3luUXd6QS1J\",\n
+        \     \"etag\": \"bU2YyL5HNGJ-T0WGaVLdrMc0xxg\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LmZUQ3luUXd6QS1J\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-07-25T04:00:59Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Test
         Driven Development (TDD) can be a drag, but it doesn\u2019t have to be. Here\u2019s
@@ -1047,13 +1412,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/fTCynQwzA-I/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 33,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 45,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"fTCynQwzA-I\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"fTCynQwzA-I\",\n        \"videoPublishedAt\":
         \"2025-07-25T04:00:59Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"N0ly6OuTYDjxciOHrg4s9EIjDaM\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LmJNMC1LMThiVWZV\",\n
+        \     \"etag\": \"b-4RWYZZnuzQUpF956TNn1i9zzQ\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LmJNMC1LMThiVWZV\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-07-24T23:00:41Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Announcing
         Gemma 3n, Imagen 4, and more! - Google Developer News June 2025\",\n        \"description\":
@@ -1083,13 +1448,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/bM0-K18bUfU/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 34,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 46,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"bM0-K18bUfU\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"bM0-K18bUfU\",\n        \"videoPublishedAt\":
         \"2025-07-24T23:00:41Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"pWrQc5zLlrGsLQp7FH-2n6JFHPU\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LnkyQW1hZURMT1lZ\",\n
+        \     \"etag\": \"0lNPq71sNFFWS1CiW4zEGlZ5cIw\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LnkyQW1hZURMT1lZ\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-07-24T19:01:02Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"The
         future is Autonomous AI agents\",\n        \"description\": \"Clement Farabet,
@@ -1110,13 +1475,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/y2AmaeDLOYY/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 35,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 47,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"y2AmaeDLOYY\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"y2AmaeDLOYY\",\n        \"videoPublishedAt\":
         \"2025-07-24T19:01:02Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"AXIAWVQpGeD8SU9LO9Byo0rKz5o\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LkFNM3l6VERXNjVV\",\n
+        \     \"etag\": \"JCxLm5CTfhtf8Ib6cRqyy0Hsg5Q\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LkFNM3l6VERXNjVV\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-07-24T15:00:15Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Season
         5 - Shaping the agentic future with Clement Farabet\",\n        \"description\":
@@ -1150,13 +1515,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/AM3yzTDW65U/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 36,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 48,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"AM3yzTDW65U\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"AM3yzTDW65U\",\n        \"videoPublishedAt\":
         \"2025-07-24T15:00:15Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"jwlm0l3cCqnoobAflYDolfwHF-I\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LjJ3b243WHd5WndR\",\n
+        \     \"etag\": \"my1pXNPV1G8Q47ML7z2s-Wa7PpM\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LjJ3b243WHd5WndR\",\n
         \     \"snippet\": {\n        \"publishedAt\": \"2025-07-24T04:00:07Z\",\n
         \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Should
         your mobile AI run on-device or in the cloud?\",\n        \"description\":
@@ -1175,461 +1540,13 @@ interactions:
         {\n            \"url\": \"https://i.ytimg.com/vi/2won7XwyZwQ/maxresdefault.jpg\",\n
         \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
         \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 37,\n        \"resourceId\":
+        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 49,\n        \"resourceId\":
         {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"2won7XwyZwQ\"\n
         \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
         \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
         \     \"contentDetails\": {\n        \"videoId\": \"2won7XwyZwQ\",\n        \"videoPublishedAt\":
-        \"2025-07-24T04:00:07Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"k6QzwbcK3RHlDjQGF4uBehmjIPs\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LnpVQjVBX2V6SU9V\",\n
-        \     \"snippet\": {\n        \"publishedAt\": \"2025-07-23T19:01:02Z\",\n
-        \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Building
-        a frontier AI search experience\",\n        \"description\": \"Robby Stein,
-        VP of Product for Google Search, joins host Logan Kilpatrick to explore how
-        Search is evolving into a frontier AI product. Their conversation covers the
-        shift from simple keywords to complex, conversational queries, the rise of
-        agentic capabilities that can take action on your behalf, and the vision to
-        help billions of users truly \\\"ask anything.\\\" Learn more about the technology
-        behind AI Overviews, AI Mode, Deep Search, and the future of multimodal interaction.\\n\\nResources:
-        \\nGenerative AI in Search: Let Google do the searching for you \u2192https://goo.gle/45jEj5K\\nAI
-        in Search \u2192 https://goo.gle/46YHbpX \\nGoogle AI overview \u2192 https://goo.gle/3ICmUN7
-        \\n\\nChapters:\\n1:07 - Search as a Frontier AI Product\\n2:38 - Reaching
-        1.5 Billion Users\\n3:37 - What Is AI Mode?\\n4:17 - Understanding Query Fan-Out\\n5:18
-        - Balancing Latency and performance with Gemini 2.5 Pro\\n6:51 - How Deep
-        Search works\\n9:08 - Fine-tuning models for product experience\\n11:24 -
-        Shifting user behaviors\\n14:07 -  The rise of visual search\\n16:52 - Speech
-        and conversational AI in Search\\n18:36 - Comparing Gemini and Search\\n20:04
-        -  Real-time tool use in Search\\n22:52 - Evolving the Search interface\\n26:03
-        - Making Search more personal\\n29:15 - The agentic future of Search \\n31:15
-        - Agents beyond booking tickets\\n37:11- On-the-fly software creation\\n38:06
-        -Google DeepMind and Search collaboration\\n40:08 - What's next for Search\\n\\n\\nWatch
-        more Release Notes \u2192 https://goo.gle/4njokfg \\nSubscribe to Google for
-        Developers \u2192 https://goo.gle/developers \\n\\nSpeaker: Logan Kilpatrick\\nProducts
-        Mentioned: Google AI\",\n        \"thumbnails\": {\n          \"default\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/zUB5A_ezIOU/default.jpg\",\n
-        \           \"width\": 120,\n            \"height\": 90\n          },\n          \"medium\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/zUB5A_ezIOU/mqdefault.jpg\",\n
-        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/zUB5A_ezIOU/hqdefault.jpg\",\n
-        \           \"width\": 480,\n            \"height\": 360\n          },\n          \"standard\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/zUB5A_ezIOU/sddefault.jpg\",\n
-        \           \"width\": 640,\n            \"height\": 480\n          }\n        },\n
-        \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 38,\n        \"resourceId\":
-        {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"zUB5A_ezIOU\"\n
-        \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
-        \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
-        \     \"contentDetails\": {\n        \"videoId\": \"zUB5A_ezIOU\",\n        \"videoPublishedAt\":
-        \"2025-07-23T19:01:02Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"IUwd3xCvp0G-XbQ3SiGoP6NuQDM\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LkVnd0FDQXVrMkxn\",\n
-        \     \"snippet\": {\n        \"publishedAt\": \"2025-07-23T16:44:35Z\",\n
-        \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"How
-        are you using AI in your development workflow? \U0001F4AD\",\n        \"description\":
-        \"At hashtag#GoogleIOConnect Berlin, developers shared how AI is streamlining
-        key parts of the development lifecycle, from automating test generation and
-        repetitive workflows, to accelerating information retrieval without context
-        switching, to speeding up code implementation and refactoring.\\n\\nSubscribe
-        to Google for Developers \u2192 https://goo.gle/developers \\n\\nProducts
-        Mentioned: Google AI\",\n        \"thumbnails\": {\n          \"default\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/EgwACAuk2Lg/default.jpg\",\n
-        \           \"width\": 120,\n            \"height\": 90\n          },\n          \"medium\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/EgwACAuk2Lg/mqdefault.jpg\",\n
-        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/EgwACAuk2Lg/hqdefault.jpg\",\n
-        \           \"width\": 480,\n            \"height\": 360\n          },\n          \"standard\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/EgwACAuk2Lg/sddefault.jpg\",\n
-        \           \"width\": 640,\n            \"height\": 480\n          },\n          \"maxres\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/EgwACAuk2Lg/maxresdefault.jpg\",\n
-        \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
-        \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 39,\n        \"resourceId\":
-        {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"EgwACAuk2Lg\"\n
-        \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
-        \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
-        \     \"contentDetails\": {\n        \"videoId\": \"EgwACAuk2Lg\",\n        \"videoPublishedAt\":
-        \"2025-07-23T16:44:35Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"3KbqyCJ_l7xUqHmU95OkxXPe85A\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LlBBTFJST00ySldF\",\n
-        \     \"snippet\": {\n        \"publishedAt\": \"2025-07-23T13:31:22Z\",\n
-        \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Building
-        human-centered AI products with Ovetta Sampson\",\n        \"description\":
-        \"Meet Ovetta Sampson, Director of UX for AI compute enablement at Google.
-        She shares her unique path from journalism to AI, including her work on groundbreaking
-        projects prioritizing human-centered design principles. Discover valuable
-        insights into making AI more accessible, the importance of responsible development,
-        and more in this episode of People of AI. \\n\\nChapters:\\n0:00 - Ovetta\u2019s
-        story\\n16:14 - Human-centered AI design and model shaping \\n27:38 - The
-        value of building new technology \\n35:55 - AI Ethics \\n48:49 - What does
-        it mean to be a person of human-centered AI?\\n\\nResources: \\nGenerative
-        AI and creative arms race \u2192 https://goo.gle/4jdALHg \\nLessons Learned
-        from Mixing Data Science and Design Research Methods to Improve Customer Service
-        \u2192 https://goo.gle/4jdALHg \\nAI Ethics \u2192 https://goo.gle/4aoUpvX
-        \\n\\nWatch more People of AI \u2192 https://goo.gle/PAI \\nSubscribe to Google
-        for Developers \u2192 https://goo.gle/developers \\n\\n#PeopleofAI\\n\\nSpeaker:
-        Ashley Oldacre, Ovetta Sampson\",\n        \"thumbnails\": {\n          \"default\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/PALRROM2JWE/default.jpg\",\n
-        \           \"width\": 120,\n            \"height\": 90\n          },\n          \"medium\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/PALRROM2JWE/mqdefault.jpg\",\n
-        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/PALRROM2JWE/hqdefault.jpg\",\n
-        \           \"width\": 480,\n            \"height\": 360\n          },\n          \"standard\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/PALRROM2JWE/sddefault.jpg\",\n
-        \           \"width\": 640,\n            \"height\": 480\n          },\n          \"maxres\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/PALRROM2JWE/maxresdefault.jpg\",\n
-        \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
-        \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 40,\n        \"resourceId\":
-        {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"PALRROM2JWE\"\n
-        \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
-        \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
-        \     \"contentDetails\": {\n        \"videoId\": \"PALRROM2JWE\",\n        \"videoPublishedAt\":
-        \"2025-07-23T13:31:22Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"t5-rK94gadMAl5qLR2_DsrDV5Rg\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LlhidkhsTVR6aTZF\",\n
-        \     \"snippet\": {\n        \"publishedAt\": \"2025-07-23T13:31:13Z\",\n
-        \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"The
-        intersection of AI, art, and design with Douglas Edric Stanley and Anthony
-        Masure\",\n        \"description\": \"Join Ashley Oldacre as she hosts a conversation
-        with artist Douglas Edric Stanley and Dean of Research at Geneva University
-        of Art and Design Anthony Masure. They discuss their origin stories, the role
-        of AI in creative fields, and the value of critical thinking in a technology-driven
-        world.\\n\\nChapters:\\n0:00 - Introduction\\n0:33 - Meet Douglas Edric Stanley
-        and Anthony Masure\\n2:31 - Anthony\u2019s journey\\n5:57 - Douglas\u2019s
-        journey \\n13:01 - Importance of critical thinking and technology\\n20:23
-        - Impact of AI on art and design \\n25:53 - Some concerns about AI in the
-        art and design world\\n33:39 - AI as a medium \\n39:32 - What does it mean
-        to be a person of AI? \\n\\nResources:\\nGeneva School of Art and Design:
-        https://goo.gle/4fNLYvh \\nAnthony Masure: https://goo.gle/3PsxiqH \\nDouglas
-        Edric Stanley: https://goo.gle/4gJRu3f \\nArtificial Design: Creation Versus
-        Machine Learning: https://goo.gle/40mIGuy \\nArt school in Aix-en-Provence:
-        https://goo.gle/3PspDIV \\nCaran D\u2019Ache: https://goo.gle/4gKn4xL \\nDrawing
-        and AI: https://goo.gle/4jcmDhF \\nArtists: Varvara & Mar: https://goo.gle/3BX0djF
-        \\nAssembling Intelligence Exhibition: https://goo.gle/3Pslg0x \\nMyth of
-        Janus: https://goo.gle/405CHZL \\n\\nWatch more People of AI \u2192 https://goo.gle/PAI
-        \\nSubscribe to Google for Developers \u2192 https://goo.gle/developers \\n\\n#PeopleofAI\\n\\nSpeaker:
-        Ashley Oldacre\",\n        \"thumbnails\": {\n          \"default\": {\n            \"url\":
-        \"https://i.ytimg.com/vi/XbvHlMTzi6E/default.jpg\",\n            \"width\":
-        120,\n            \"height\": 90\n          },\n          \"medium\": {\n
-        \           \"url\": \"https://i.ytimg.com/vi/XbvHlMTzi6E/mqdefault.jpg\",\n
-        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/XbvHlMTzi6E/hqdefault.jpg\",\n
-        \           \"width\": 480,\n            \"height\": 360\n          },\n          \"standard\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/XbvHlMTzi6E/sddefault.jpg\",\n
-        \           \"width\": 640,\n            \"height\": 480\n          },\n          \"maxres\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/XbvHlMTzi6E/maxresdefault.jpg\",\n
-        \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
-        \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 41,\n        \"resourceId\":
-        {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"XbvHlMTzi6E\"\n
-        \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
-        \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
-        \     \"contentDetails\": {\n        \"videoId\": \"XbvHlMTzi6E\",\n        \"videoPublishedAt\":
-        \"2025-07-23T13:31:13Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"U6uViPU2KGO-JgsA3uzbc6hxcJ8\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LnNneDctTkFKSjBn\",\n
-        \     \"snippet\": {\n        \"publishedAt\": \"2025-07-23T13:31:04Z\",\n
-        \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Digital
-        health with Dr. Oliver Aalami\",\n        \"description\": \"Discover the
-        fascinating world of digital health innovation with a leading expert in vascular
-        surgery and digital health innovation, Dr. Oliver Aalami. In this insightful
-        People of AI episode, Dr. Aalami shares his path to medicine, his passion
-        for integrating technology in patient care, and his role as director of Stanford\u2019s
-        Biodesign for Digital Health program. Explore the groundbreaking projects
-        and initiatives shaping the future of healthcare.\\n\\nChapters:\\n0:00 -
-        Introduction\\n0:33 - Dr. Alami\u2019s journey\\n6:08 - Biodesign for Digital
-        health intro\\n24:29 - GitHub Spezi\\n26:44 - Where does AI come into digital
-        health?\\n32:50 - Use cases and examples \\n41:27 - What does it mean to be
-        a person of AI? \\n\\nResources: \\nStanford profile \u2192 https://goo.gle/49nPZF7
-        \\nBiodesign for Digital Health \u2192 https://goo.gle/4fYf0ZV \\nGitHub Stanford
-        Spezi \u2192 https://goo.gle/4g9TZLS \\n21st Century Cures Act \u2192 https://goo.gle/41BwsPV
-        \\n\\nWatch more People of AI \u2192 https://goo.gle/PAI \\nSubscribe to Google
-        for Developers \u2192 https://goo.gle/developers \\n\\nSpeaker: Ashley Oldacre\",\n
-        \       \"thumbnails\": {\n          \"default\": {\n            \"url\":
-        \"https://i.ytimg.com/vi/sgx7-NAJJ0g/default.jpg\",\n            \"width\":
-        120,\n            \"height\": 90\n          },\n          \"medium\": {\n
-        \           \"url\": \"https://i.ytimg.com/vi/sgx7-NAJJ0g/mqdefault.jpg\",\n
-        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/sgx7-NAJJ0g/hqdefault.jpg\",\n
-        \           \"width\": 480,\n            \"height\": 360\n          },\n          \"standard\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/sgx7-NAJJ0g/sddefault.jpg\",\n
-        \           \"width\": 640,\n            \"height\": 480\n          },\n          \"maxres\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/sgx7-NAJJ0g/maxresdefault.jpg\",\n
-        \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
-        \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 42,\n        \"resourceId\":
-        {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"sgx7-NAJJ0g\"\n
-        \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
-        \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
-        \     \"contentDetails\": {\n        \"videoId\": \"sgx7-NAJJ0g\",\n        \"videoPublishedAt\":
-        \"2025-07-23T13:31:04Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"vSbBnB8k4errqqdyu0Hxc2-D00M\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3Ljd3X0FSVGotbXZN\",\n
-        \     \"snippet\": {\n        \"publishedAt\": \"2025-07-23T13:30:53Z\",\n
-        \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"NotebookLM
-        with Steven Johnson and Raiza Martin\",\n        \"description\": \"Explore
-        the fascinating world of AI and its potential to transform how we work, learn,
-        and create with NotebookLM. Join guests Steven Johnson, Editorial Director
-        of Notebook LM, and Raiza Martin, Senior Product Manager at Google Labs, leading
-        Notebook LM for a deep dive into the inspiration, development, practical use
-        cases, and more in this People of AI episode. \\n\\nChapters:\\n0:20 - Steven
-        origin story\\n1:11 - Raiza origin story \\n5:35- The Adjacent Possible \\n7:40
-        - How was Notebook LM started?\\n40:19 - Creativity in the age of AI\\n\\nResources:\\nA.I.
-        Is Mastering Language. Should We Trust What It Says? \u2192 https://goo.gle/3Cub1Wd
-        \\nNotebookLM website\u2192 https://goo.gle/3UZOwPe \\nCreate your first notebook\u2192
-        \ https://goo.gle/3OflIPc \\nAdjacent possible newsletter \u2192 https://goo.gle/3AGpe21
-        \\n\\nWatch more People of AI \u2192 https://goo.gle/PAI \\nSubscribe to Google
-        for Developers \u2192 https://goo.gle/developers  \\n\\n#PeopleofAI\\n\\nSpeaker:
-        Ashley Oldacre\\nProducts Mentioned: NotebookLM, Gemini\",\n        \"thumbnails\":
-        {\n          \"default\": {\n            \"url\": \"https://i.ytimg.com/vi/7w_ARTj-mvM/default.jpg\",\n
-        \           \"width\": 120,\n            \"height\": 90\n          },\n          \"medium\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/7w_ARTj-mvM/mqdefault.jpg\",\n
-        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/7w_ARTj-mvM/hqdefault.jpg\",\n
-        \           \"width\": 480,\n            \"height\": 360\n          },\n          \"standard\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/7w_ARTj-mvM/sddefault.jpg\",\n
-        \           \"width\": 640,\n            \"height\": 480\n          },\n          \"maxres\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/7w_ARTj-mvM/maxresdefault.jpg\",\n
-        \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
-        \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 43,\n        \"resourceId\":
-        {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"7w_ARTj-mvM\"\n
-        \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
-        \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
-        \     \"contentDetails\": {\n        \"videoId\": \"7w_ARTj-mvM\",\n        \"videoPublishedAt\":
-        \"2025-07-23T13:30:53Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"2Rv3m9oMi-kUOBjMrIOPb0CK3QI\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LjM1VnhDRnVYeDhB\",\n
-        \     \"snippet\": {\n        \"publishedAt\": \"2025-07-23T13:30:41Z\",\n
-        \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Responsible
-        AI panel at DevFest Silicon Valley 2024\",\n        \"description\": \"Join
-        People of AI host Ashley Oldacre as she moderates a panel on Responsible AI
-        at DevFest Silicon Valley. Ashley teams up with four industry experts to discuss
-        their personal journeys in technology and explore the future of AI. Learn
-        how these experts keep responsible AI at the forefront of emerging technologies.\\n\\nResources:\\nLearn
-        more about the amazing panelists: \\nJigyasa Grover, Lead, AI & Research at
-        Bordo AI \u2192 https://goo.gle/3Z42QJb \\nDeepa Subramanian, Google Developer
-        Expert \u2192 https://goo.gle/3AE5P1v \\nDaniel Goncharov, AI Research Engineer,
-        Stanford University School of Medicine \u2192 https://goo.gle/40M2hF4 \\nVikram
-        Tiwari, Lead ML Engineer, Assembled \u2192 https://goo.gle/4eJB3m1 \\n\\nWatch
-        more People of AI \u2192 https://goo.gle/PAI\\nSubscribe to Google for Developers
-        \u2192 https://goo.gle/developers \\n\\n#PeopleofAI\\n\\nSpeaker: Ashley Oldacre\\nProducts
-        Mentioned: AI\",\n        \"thumbnails\": {\n          \"default\": {\n            \"url\":
-        \"https://i.ytimg.com/vi/35VxCFuXx8A/default.jpg\",\n            \"width\":
-        120,\n            \"height\": 90\n          },\n          \"medium\": {\n
-        \           \"url\": \"https://i.ytimg.com/vi/35VxCFuXx8A/mqdefault.jpg\",\n
-        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/35VxCFuXx8A/hqdefault.jpg\",\n
-        \           \"width\": 480,\n            \"height\": 360\n          },\n          \"standard\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/35VxCFuXx8A/sddefault.jpg\",\n
-        \           \"width\": 640,\n            \"height\": 480\n          },\n          \"maxres\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/35VxCFuXx8A/maxresdefault.jpg\",\n
-        \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
-        \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 44,\n        \"resourceId\":
-        {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"35VxCFuXx8A\"\n
-        \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
-        \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
-        \     \"contentDetails\": {\n        \"videoId\": \"35VxCFuXx8A\",\n        \"videoPublishedAt\":
-        \"2025-07-23T13:30:41Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"aC2zRK7Vyob2418nys0VbVUzMYs\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LlpjdzQyN196Nlhn\",\n
-        \     \"snippet\": {\n        \"publishedAt\": \"2025-07-23T13:30:22Z\",\n
-        \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"3-step
-        approach to mobile app compliance with Checks co-founders Fergus Hurley and
-        Nia Castelly\",\n        \"description\": \"Meet Fergus Hurley and Nia Castelly,
-        co-funders of Checks, Google's AI-powered compliance platform. Fergus Hurley,
-        Product Management Director at Google Cloud in addition to General Manager
-        and Co-founder of Checks, and Nia Castelly, Co-Founder and Head of Legal at
-        Checks, share the inner workings of Checks. Discover how they built Checks
-        initially leveraging natural language processing (NLP) and, now Gemini, to
-        review and analyze privacy policies at scale. Learn about their three-step
-        approach that can detect what an app says it does, how they test apps to see
-        what\u2019s going on, AI safety measures, Android vitals, and much more in
-        this episode of People of AI.\\n\\nChapters:\\n0:00 - Introduction\\n01:00
-        - Guest Bio\\n03:19 - Nia\u2019s story \\n11:30 - Fergus\u2019s story\\n20:23
-        - Starting Checks\\n44: 01 - Simplifying Compliance Triangle \\n46:47 - mission
-        and purpose \\n47:48 - How does Checks work?\\n52:13 - Code Compliance \\n56:25
-        - What does it mean to be a person of AI?\\n\\nResources:\\nChecks \u2192
-        https://goo.gle/4ejR81h\\nCode compliance \u2192 https://goo.gle/3YGOH30 \\nBlog:
-        Checks, Google\u2019s AI-powered privacy platform \u2192 https://goo.gle/4fszoSu
-        \ \\nThe new new thing \u2192 https://goo.gle/3ChItPK \\nGDPR \u2192 https://goo.gle/3NVO0hg
-        \\nAndroid Vitals \u2192 https://goo.gle/3YTs9xu \\nThe Singularity is Near
-        \u2192 https://goo.gle/4fzcMQ5 \\n\\nWatch more People of AI \u2192 https://goo.gle/PAI
-        \\nSubscribe to Google for Developers \u2192 https://goo.gle/developers \\n\\n#PeopleofAI\\n\\nSpeaker:
-        Ashley Oldacre\\nProducts Mentioned: AI, Checks\",\n        \"thumbnails\":
-        {\n          \"default\": {\n            \"url\": \"https://i.ytimg.com/vi/Zcw427_z6Xg/default.jpg\",\n
-        \           \"width\": 120,\n            \"height\": 90\n          },\n          \"medium\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/Zcw427_z6Xg/mqdefault.jpg\",\n
-        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/Zcw427_z6Xg/hqdefault.jpg\",\n
-        \           \"width\": 480,\n            \"height\": 360\n          },\n          \"standard\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/Zcw427_z6Xg/sddefault.jpg\",\n
-        \           \"width\": 640,\n            \"height\": 480\n          },\n          \"maxres\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/Zcw427_z6Xg/maxresdefault.jpg\",\n
-        \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
-        \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 45,\n        \"resourceId\":
-        {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"Zcw427_z6Xg\"\n
-        \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
-        \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
-        \     \"contentDetails\": {\n        \"videoId\": \"Zcw427_z6Xg\",\n        \"videoPublishedAt\":
-        \"2025-07-23T13:30:22Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"NRq_ucahTmcJYIU5Tj9oM4RNBiQ\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LjFOSlg0c1A2dWJj\",\n
-        \     \"snippet\": {\n        \"publishedAt\": \"2025-07-23T13:30:09Z\",\n
-        \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"How
-        AI is revolutionizing sign language recognition with Sam Sepah and Thad Starner\",\n
-        \       \"description\": \"Meet today\u2019s guests Sam Sepah and Thad Starner.
-        Sam Sepah, an AI/ML Research Manager at Google, drives innovation in accessibility
-        technology for users with deafness and other disabilities. Thad Starner is
-        a Georgia Tech Professor, wearable computing pioneer, and staff research scientist
-        at Google working on sign language recognition. Explore the transformative
-        impact of AI on sign language recognition and accessibility from the Kaggle
-        competition to Pop Sign AI, and much more!\\n\\nChapters:\\n0:00 - Introduction\\n1:00
-        - Thad's Story - a Journey into AI and Wearable Computing\\n19:59 - Sam's
-        Story - Experience as Deaf Individual and Accessibility Advocate\\n26:34 -
-        The Importance of Early Sign Language Exposure \\n35:18 - Sam\u2019s Journey
-        to the USA and into Tech \\n41:06 - The Intersection of Thad's and Sam's Work
-        \\n41:43 - Google Glass\\n48:37 - AI Advancements improve Technology for the
-        Deaf Community\\n54:04 - How Kaggle Competitions have helped push the competition
-        forward\\n55:21 - PopSign AI\\n1:05:34 - Sam and Thad\u2019s collaboration\\n1:13:03
-        - What does it mean to be a person of AI?\\n\\nResources:\\nKaggle \u2192
-        https://goo.gle/3YCcjau \\nKaggle Competitions \u2192 https://goo.gle/3NDqzcz
-        \\nPopSign Game \u2192 https://goo.gle/3UinxhJ \\nPrecious PopSign Kaggle
-        Competition \u2192 https://goo.gle/3Ui5s3q \\n\\nWatch more People of AI \u2192
-        https://goo.gle/PAI \\nSubscribe to Google for Developers \u2192 https://goo.gle/developers
-        \\n\\n#PeopleofAI\\n\\nSpeaker: Ashley Oldacre\\nProducts mentioned: MediaPipe\",\n
-        \       \"thumbnails\": {\n          \"default\": {\n            \"url\":
-        \"https://i.ytimg.com/vi/1NJX4sP6ubc/default.jpg\",\n            \"width\":
-        120,\n            \"height\": 90\n          },\n          \"medium\": {\n
-        \           \"url\": \"https://i.ytimg.com/vi/1NJX4sP6ubc/mqdefault.jpg\",\n
-        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/1NJX4sP6ubc/hqdefault.jpg\",\n
-        \           \"width\": 480,\n            \"height\": 360\n          },\n          \"standard\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/1NJX4sP6ubc/sddefault.jpg\",\n
-        \           \"width\": 640,\n            \"height\": 480\n          },\n          \"maxres\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/1NJX4sP6ubc/maxresdefault.jpg\",\n
-        \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
-        \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 46,\n        \"resourceId\":
-        {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"1NJX4sP6ubc\"\n
-        \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
-        \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
-        \     \"contentDetails\": {\n        \"videoId\": \"1NJX4sP6ubc\",\n        \"videoPublishedAt\":
-        \"2025-07-23T13:30:09Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"4YTjQNope_DMS8ZJoiHwawlvXeI\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LmU4NUtGNGhnQy1R\",\n
-        \     \"snippet\": {\n        \"publishedAt\": \"2025-07-23T13:29:45Z\",\n
-        \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Season
-        4 - Gus and Ashley talk AI visionaries, developers, and consumers\",\n        \"description\":
-        \"Join hosts Ashley Oldacre and Gus Martins as they kick off Season 4 of the
-        People of AI podcast! In this episode, enjoy a conversation about how much
-        has changed in the AI landscape the past 2 years, how it is impacting us and
-        what that means to be a person of AI today.  Listen to the conversation as
-        the hosts explore the different ways people are using and interacting with
-        AI, from researchers to developers, and the everyday person, how to become
-        a person of AI and how to stay up-to-date with this evolution.  \\n\\nChapters:\\n0:00
-        - Introduction\\n00:43 - Summary of the past 2 years\\n01:57 - What does it
-        mean to be a person of AI today?\\n 02:26 - Review of Ashley and Gus\\n05:300
-        - Generative AI expanding to mainstream \\n07:45 - Who is a Developer\\n09:25
-        - Do you need to learn to code?\\n11:05 - AI = Superhuman?\\n13:27 - How to
-        become a person of AI?\\n15:16 - How to stay AI relevant & up-to-date?\\n\\nResources:\\nGemma
-        quickstart \u2192 https://goo.gle/406JjIM \\nGemini API quickstart \u2192
-        https://goo.gle/3YcFU8O \\nBuild with Google A \u2192 https://goo.gle/4hbAp38
-        \ \\n\\nWatch more People of AI \u2192 https://goo.gle/PAI \\nSubscribe to
-        Google for Developers \u2192 https://goo.gle/developers \\n\\n#PeopleofAI\\n\\nSpeakers:
-        Ashley Oldacre, Luiz Gustavo Martins\\nProducts Mentioned: Gemini, Gemma\",\n
-        \       \"thumbnails\": {\n          \"default\": {\n            \"url\":
-        \"https://i.ytimg.com/vi/e85KF4hgC-Q/default.jpg\",\n            \"width\":
-        120,\n            \"height\": 90\n          },\n          \"medium\": {\n
-        \           \"url\": \"https://i.ytimg.com/vi/e85KF4hgC-Q/mqdefault.jpg\",\n
-        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/e85KF4hgC-Q/hqdefault.jpg\",\n
-        \           \"width\": 480,\n            \"height\": 360\n          },\n          \"standard\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/e85KF4hgC-Q/sddefault.jpg\",\n
-        \           \"width\": 640,\n            \"height\": 480\n          },\n          \"maxres\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/e85KF4hgC-Q/maxresdefault.jpg\",\n
-        \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
-        \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 47,\n        \"resourceId\":
-        {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"e85KF4hgC-Q\"\n
-        \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
-        \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
-        \     \"contentDetails\": {\n        \"videoId\": \"e85KF4hgC-Q\",\n        \"videoPublishedAt\":
-        \"2025-07-23T13:29:45Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"DecfU3TWHm0ImpE9CFU8eUNJpyQ\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LmpkM0pBYjZQZFlB\",\n
-        \     \"snippet\": {\n        \"publishedAt\": \"2025-07-23T13:26:51Z\",\n
-        \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Google
-        I/O Special with Sachin Kotwani\",\n        \"description\": \"Join host Ashley
-        Oldacre and guest Sachin Kotwani, Google\u2019s On-Device ML Lead for a second
-        special Google I/O episode. This interview dives deep into the world of Edge
-        AI. Learn about the value, advantages and the future of on-device AI, and
-        how it\u2019s already making waves through initiatives like Project Game Face,
-        and much more.\\n\\nChapters:\\n0:00 - Introduction\\n1:30 - Intro to Sachin
-        \\n03:25 - Journey into tech\\n08:13 - Transition into AI \\n09:58 - Bridging
-        interests into a career\\n12:21 - What is special about Google I/O?\\n15:02
-        - Benefits of On-Device ML\\n17:50 - The potential for On-Device ML\\n 23:20
-        - Unlocking accessibility and cool usecases\\n31:38 - Does On-Device ML deepen
-        or weaken human connection?\\n36:26 - What launched at Google I/O? \\n\\nResources:
-        \\nAndrew Ng\u2019s DeepLearning.AI  course \u2192 https://goo.gle/3xS1Z3j
-        \\nML Kit \u2192 https://goo.gle/3XIwqne \\nSachin on Google AI Edge at Google
-        I/O \u2192 https://goo.gle/3VMC3hE \\nGoogle AI Edge website \u2192 https://goo.gle/3xuSmHW
-        \\nProject Gameface \u2192 https://goo.gle/4cBeLlE  \\nAI Edge Torch \u2192
-        https://goo.gle/3XMsule\\nLLM On-Device with MediaPipe and TensorFlow Lite
-        \u2192 https://goo.gle/3La0KQa\\nModel Explorer \u2192 https://goo.gle/3RRqapE\\n\\nWatch
-        more People of AI \u2192 https://goo.gle/PAI \\nSubscribe to Google for Developers
-        \u2192 https://goo.gle/developers \\n\\n#PeopleofAI\",\n        \"thumbnails\":
-        {\n          \"default\": {\n            \"url\": \"https://i.ytimg.com/vi/jd3JAb6PdYA/default.jpg\",\n
-        \           \"width\": 120,\n            \"height\": 90\n          },\n          \"medium\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/jd3JAb6PdYA/mqdefault.jpg\",\n
-        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/jd3JAb6PdYA/hqdefault.jpg\",\n
-        \           \"width\": 480,\n            \"height\": 360\n          },\n          \"standard\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/jd3JAb6PdYA/sddefault.jpg\",\n
-        \           \"width\": 640,\n            \"height\": 480\n          },\n          \"maxres\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/jd3JAb6PdYA/maxresdefault.jpg\",\n
-        \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
-        \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 48,\n        \"resourceId\":
-        {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"jd3JAb6PdYA\"\n
-        \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
-        \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
-        \     \"contentDetails\": {\n        \"videoId\": \"jd3JAb6PdYA\",\n        \"videoPublishedAt\":
-        \"2025-07-23T13:26:51Z\"\n      }\n    },\n    {\n      \"kind\": \"youtube#playlistItem\",\n
-        \     \"etag\": \"9gMm2CTysYLUh_09h5Nk7cdd4_M\",\n      \"id\": \"VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LmUyejhtdEZQaDFz\",\n
-        \     \"snippet\": {\n        \"publishedAt\": \"2025-07-23T13:26:40Z\",\n
-        \       \"channelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"Google
-        I/O Special with Mat Velloso and Logan Kilpatrick\",\n        \"description\":
-        \"Join host Ashley Oldacre and guests Mat Velloso, VP of ML developer products
-        at Google, and Logan Kilpatrick, Product Lead for Google AI, for a special
-        episode on the latest on AI, recorded right from Google I/O.\\n\\nChapters:\\n0:00
-        - Introduction \\n01:54 - Mat and Logan\u2019s story into Tech\\n07:12 - How
-        did technology make your life better?\\n10:25 - Tech revolutions leading to
-        AI\\n16:10 - Staying connected to tech in leadership\\n21:28 - What products
-        do Mat and Logan work on? \\n25:45 - What is Google AI studio? \\n28:00 -
-        Take us to I/O in person \\n33:05 - AI launches at I/O \\n39:00 - Useful AI
-        applications that solve problems\\n47:52 - AI and automation \\n54:11 - Mat
-        and Logan\u2019s  prediction for the future\\n\\nResources:\\nTop AI developer
-        news from Google IO 2024 \u2192 https://goo.gle/3VZhwry \\nGoogle I/O 2024
-        recap \u2192 https://goo.gle/3RL8Pyi \\nProject Astr \u2192: https://goo.gle/3W2rloI
-        \\nGoogle AI Studio \u2192 https://goo.gle/4eCP6e5 \\nColab \u2192 https://goo.gle/3VJ421P
-        \\nKaggle \u2192 https://goo.gle/3RKKZ65 \\nAnders Hejlsberg \u2192 https://goo.gle/3VYolcE
-        \\nThe Culture Code by Daniel Coyle \u2192 https://goo.gle/45IWbWh \\nJaron
-        Lanier \u2192 https://goo.gle/3xpjW9r \\nRange by David Epstein \u2192 https://goo.gle/45J3zkP
-        \\n\\nGames:\\nFlappy Bird Game \u2192 https://goo.gle/4bqTcD7 \\n\\nWatch
-        more People of AI \u2192 https://goo.gle/PAI \\nSubscribe to Google for Developers
-        \u2192 https://goo.gle/developers \\n\\n#PeopleofAI\\n\\nProducts Mentioned:
-        Google AI\",\n        \"thumbnails\": {\n          \"default\": {\n            \"url\":
-        \"https://i.ytimg.com/vi/e2z8mtFPh1s/default.jpg\",\n            \"width\":
-        120,\n            \"height\": 90\n          },\n          \"medium\": {\n
-        \           \"url\": \"https://i.ytimg.com/vi/e2z8mtFPh1s/mqdefault.jpg\",\n
-        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/e2z8mtFPh1s/hqdefault.jpg\",\n
-        \           \"width\": 480,\n            \"height\": 360\n          },\n          \"standard\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/e2z8mtFPh1s/sddefault.jpg\",\n
-        \           \"width\": 640,\n            \"height\": 480\n          },\n          \"maxres\":
-        {\n            \"url\": \"https://i.ytimg.com/vi/e2z8mtFPh1s/maxresdefault.jpg\",\n
-        \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
-        \       \"channelTitle\": \"Google for Developers\",\n        \"playlistId\":
-        \"UU_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"position\": 49,\n        \"resourceId\":
-        {\n          \"kind\": \"youtube#video\",\n          \"videoId\": \"e2z8mtFPh1s\"\n
-        \       },\n        \"videoOwnerChannelTitle\": \"Google for Developers\",\n
-        \       \"videoOwnerChannelId\": \"UC_x5XG1OV2P6uZZ5FSM9Ttw\"\n      },\n
-        \     \"contentDetails\": {\n        \"videoId\": \"e2z8mtFPh1s\",\n        \"videoPublishedAt\":
-        \"2025-07-23T13:26:40Z\"\n      }\n    }\n  ],\n  \"pageInfo\": {\n    \"totalResults\":
-        6737,\n    \"resultsPerPage\": 50\n  }\n}\n"
+        \"2025-07-24T04:00:07Z\"\n      }\n    }\n  ],\n  \"pageInfo\": {\n    \"totalResults\":
+        6749,\n    \"resultsPerPage\": 50\n  }\n}\n"
     headers:
       Alt-Svc:
       - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
@@ -1638,7 +1555,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Sat, 23 Aug 2025 02:28:19 GMT
+      - Fri, 29 Aug 2025 21:23:08 GMT
       Server:
       - scaffolding on HTTPServer2
       Transfer-Encoding:
@@ -1668,13 +1585,13 @@ interactions:
       User-Agent:
       - python-requests/2.32.4
     method: GET
-    uri: https://www.googleapis.com/youtube/v3/videos?id=a34Jaw_frDc&key=DUMMY&part=contentDetails
+    uri: https://www.googleapis.com/youtube/v3/videos?id=IYpt25GHB1U&key=DUMMY&part=contentDetails
   response:
     body:
-      string: "{\n  \"kind\": \"youtube#videoListResponse\",\n  \"etag\": \"yyFKCtlvut-5TNjXVnjGTeR4p5c\",\n
+      string: "{\n  \"kind\": \"youtube#videoListResponse\",\n  \"etag\": \"x1rCqKnC7Zd88PB0qFaREQnOxzo\",\n
         \ \"items\": [\n    {\n      \"kind\": \"youtube#video\",\n      \"etag\":
-        \"FOM5z2754rM6NmxZEe6kLQpWb80\",\n      \"id\": \"a34Jaw_frDc\",\n      \"contentDetails\":
-        {\n        \"duration\": \"PT42S\",\n        \"dimension\": \"2d\",\n        \"definition\":
+        \"E2oH0g2GHogASWChIfWiCOY2uMU\",\n      \"id\": \"IYpt25GHB1U\",\n      \"contentDetails\":
+        {\n        \"duration\": \"PT9M3S\",\n        \"dimension\": \"2d\",\n        \"definition\":
         \"hd\",\n        \"caption\": \"true\",\n        \"licensedContent\": false,\n
         \       \"contentRating\": {},\n        \"projection\": \"rectangular\"\n
         \     }\n    }\n  ],\n  \"pageInfo\": {\n    \"totalResults\": 1,\n    \"resultsPerPage\":
@@ -1687,7 +1604,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Sat, 23 Aug 2025 02:28:20 GMT
+      - Fri, 29 Aug 2025 21:23:08 GMT
       Server:
       - scaffolding on HTTPServer2
       Transfer-Encoding:
@@ -1717,13 +1634,13 @@ interactions:
       User-Agent:
       - python-requests/2.32.4
     method: GET
-    uri: https://www.googleapis.com/youtube/v3/videos?id=W7ZzuiX3Cc4&key=DUMMY&part=contentDetails
+    uri: https://www.googleapis.com/youtube/v3/videos?id=H3AVJ6HtNOE&key=DUMMY&part=contentDetails
   response:
     body:
-      string: "{\n  \"kind\": \"youtube#videoListResponse\",\n  \"etag\": \"urtTso2vXmHIZoFUO2wx9QbVd1I\",\n
+      string: "{\n  \"kind\": \"youtube#videoListResponse\",\n  \"etag\": \"DEzvrt4E9AU_Fm8LhcV6NB_VYN0\",\n
         \ \"items\": [\n    {\n      \"kind\": \"youtube#video\",\n      \"etag\":
-        \"5_ITU18ZHxttE5vyRfDAMvp19kE\",\n      \"id\": \"W7ZzuiX3Cc4\",\n      \"contentDetails\":
-        {\n        \"duration\": \"PT2M53S\",\n        \"dimension\": \"2d\",\n        \"definition\":
+        \"4BkM1rl0Ic0wYD_yD2Aej7W0GNE\",\n      \"id\": \"H3AVJ6HtNOE\",\n      \"contentDetails\":
+        {\n        \"duration\": \"PT40S\",\n        \"dimension\": \"2d\",\n        \"definition\":
         \"hd\",\n        \"caption\": \"true\",\n        \"licensedContent\": false,\n
         \       \"contentRating\": {},\n        \"projection\": \"rectangular\"\n
         \     }\n    }\n  ],\n  \"pageInfo\": {\n    \"totalResults\": 1,\n    \"resultsPerPage\":
@@ -1736,889 +1653,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Sat, 23 Aug 2025 02:28:20 GMT
-      Server:
-      - scaffolding on HTTPServer2
-      Transfer-Encoding:
-      - chunked
-      Vary:
-      - Origin
-      - X-Origin
-      - Referer
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-XSS-Protection:
-      - '0'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - python-requests/2.32.4
-    method: GET
-    uri: https://www.googleapis.com/youtube/v3/videos?id=fXaeutEgjw4&key=DUMMY&part=contentDetails
-  response:
-    body:
-      string: "{\n  \"kind\": \"youtube#videoListResponse\",\n  \"etag\": \"XkRZFL7TtC7qxC5CKE6xjVTya2M\",\n
-        \ \"items\": [\n    {\n      \"kind\": \"youtube#video\",\n      \"etag\":
-        \"YZZSAuaqX7HkBLa_s58-yc4vYw0\",\n      \"id\": \"fXaeutEgjw4\",\n      \"contentDetails\":
-        {\n        \"duration\": \"PT10S\",\n        \"dimension\": \"2d\",\n        \"definition\":
-        \"hd\",\n        \"caption\": \"true\",\n        \"licensedContent\": false,\n
-        \       \"contentRating\": {},\n        \"projection\": \"rectangular\"\n
-        \     }\n    }\n  ],\n  \"pageInfo\": {\n    \"totalResults\": 1,\n    \"resultsPerPage\":
-        1\n  }\n}\n"
-    headers:
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/json; charset=UTF-8
-      Date:
-      - Sat, 23 Aug 2025 02:28:20 GMT
-      Server:
-      - scaffolding on HTTPServer2
-      Transfer-Encoding:
-      - chunked
-      Vary:
-      - Origin
-      - X-Origin
-      - Referer
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-XSS-Protection:
-      - '0'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - python-requests/2.32.4
-    method: GET
-    uri: https://www.googleapis.com/youtube/v3/videos?id=8DhhZ8I2NAI&key=DUMMY&part=contentDetails
-  response:
-    body:
-      string: "{\n  \"kind\": \"youtube#videoListResponse\",\n  \"etag\": \"aT9Y4pU2pLJ7VYN56KIUjQJ0Mwo\",\n
-        \ \"items\": [\n    {\n      \"kind\": \"youtube#video\",\n      \"etag\":
-        \"PPchtFe1BxdkhYSZ1rllN75RQqU\",\n      \"id\": \"8DhhZ8I2NAI\",\n      \"contentDetails\":
-        {\n        \"duration\": \"PT12S\",\n        \"dimension\": \"2d\",\n        \"definition\":
-        \"hd\",\n        \"caption\": \"true\",\n        \"licensedContent\": false,\n
-        \       \"contentRating\": {},\n        \"projection\": \"rectangular\"\n
-        \     }\n    }\n  ],\n  \"pageInfo\": {\n    \"totalResults\": 1,\n    \"resultsPerPage\":
-        1\n  }\n}\n"
-    headers:
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/json; charset=UTF-8
-      Date:
-      - Sat, 23 Aug 2025 02:28:20 GMT
-      Server:
-      - scaffolding on HTTPServer2
-      Transfer-Encoding:
-      - chunked
-      Vary:
-      - Origin
-      - X-Origin
-      - Referer
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-XSS-Protection:
-      - '0'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - python-requests/2.32.4
-    method: GET
-    uri: https://www.googleapis.com/youtube/v3/videos?id=t0MraF45AOY&key=DUMMY&part=contentDetails
-  response:
-    body:
-      string: "{\n  \"kind\": \"youtube#videoListResponse\",\n  \"etag\": \"zUX5ekHivKStGetM_t00UzmbkgE\",\n
-        \ \"items\": [\n    {\n      \"kind\": \"youtube#video\",\n      \"etag\":
-        \"dr0WE55RPF6s_JuZwKvQdD5cJjk\",\n      \"id\": \"t0MraF45AOY\",\n      \"contentDetails\":
-        {\n        \"duration\": \"PT1M16S\",\n        \"dimension\": \"2d\",\n        \"definition\":
-        \"hd\",\n        \"caption\": \"true\",\n        \"licensedContent\": false,\n
-        \       \"contentRating\": {},\n        \"projection\": \"rectangular\"\n
-        \     }\n    }\n  ],\n  \"pageInfo\": {\n    \"totalResults\": 1,\n    \"resultsPerPage\":
-        1\n  }\n}\n"
-    headers:
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/json; charset=UTF-8
-      Date:
-      - Sat, 23 Aug 2025 02:28:20 GMT
-      Server:
-      - scaffolding on HTTPServer2
-      Transfer-Encoding:
-      - chunked
-      Vary:
-      - Origin
-      - X-Origin
-      - Referer
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-XSS-Protection:
-      - '0'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - python-requests/2.32.4
-    method: GET
-    uri: https://www.googleapis.com/youtube/v3/videos?id=9W3CVUTuQew&key=DUMMY&part=contentDetails
-  response:
-    body:
-      string: "{\n  \"kind\": \"youtube#videoListResponse\",\n  \"etag\": \"3mdlUUkUlyr-KhDjqHsxtLZqqms\",\n
-        \ \"items\": [\n    {\n      \"kind\": \"youtube#video\",\n      \"etag\":
-        \"zlvP7UbfmeAbzV0m3xL-mPIZDrk\",\n      \"id\": \"9W3CVUTuQew\",\n      \"contentDetails\":
-        {\n        \"duration\": \"PT25S\",\n        \"dimension\": \"2d\",\n        \"definition\":
-        \"hd\",\n        \"caption\": \"false\",\n        \"licensedContent\": false,\n
-        \       \"contentRating\": {},\n        \"projection\": \"rectangular\"\n
-        \     }\n    }\n  ],\n  \"pageInfo\": {\n    \"totalResults\": 1,\n    \"resultsPerPage\":
-        1\n  }\n}\n"
-    headers:
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/json; charset=UTF-8
-      Date:
-      - Sat, 23 Aug 2025 02:28:21 GMT
-      Server:
-      - scaffolding on HTTPServer2
-      Transfer-Encoding:
-      - chunked
-      Vary:
-      - Origin
-      - X-Origin
-      - Referer
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-XSS-Protection:
-      - '0'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - python-requests/2.32.4
-    method: GET
-    uri: https://www.googleapis.com/youtube/v3/videos?id=vCxHCDbOS9A&key=DUMMY&part=contentDetails
-  response:
-    body:
-      string: "{\n  \"kind\": \"youtube#videoListResponse\",\n  \"etag\": \"K22dWJmXqgLrS0TTRfwv0RJLbhE\",\n
-        \ \"items\": [\n    {\n      \"kind\": \"youtube#video\",\n      \"etag\":
-        \"9tHYgMEOeQG-s8X1g0u8jmv1ypk\",\n      \"id\": \"vCxHCDbOS9A\",\n      \"contentDetails\":
-        {\n        \"duration\": \"PT10S\",\n        \"dimension\": \"2d\",\n        \"definition\":
-        \"hd\",\n        \"caption\": \"true\",\n        \"licensedContent\": false,\n
-        \       \"contentRating\": {},\n        \"projection\": \"rectangular\"\n
-        \     }\n    }\n  ],\n  \"pageInfo\": {\n    \"totalResults\": 1,\n    \"resultsPerPage\":
-        1\n  }\n}\n"
-    headers:
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/json; charset=UTF-8
-      Date:
-      - Sat, 23 Aug 2025 02:28:21 GMT
-      Server:
-      - scaffolding on HTTPServer2
-      Transfer-Encoding:
-      - chunked
-      Vary:
-      - Origin
-      - X-Origin
-      - Referer
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-XSS-Protection:
-      - '0'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - python-requests/2.32.4
-    method: GET
-    uri: https://www.googleapis.com/youtube/v3/videos?id=E0hrcDO3Noc&key=DUMMY&part=contentDetails
-  response:
-    body:
-      string: "{\n  \"kind\": \"youtube#videoListResponse\",\n  \"etag\": \"M7DbGTTZIXVd3OpQ1mh44HYc6fM\",\n
-        \ \"items\": [\n    {\n      \"kind\": \"youtube#video\",\n      \"etag\":
-        \"ZawPEqqe_KiVRnGTfCvtj8D8de0\",\n      \"id\": \"E0hrcDO3Noc\",\n      \"contentDetails\":
-        {\n        \"duration\": \"PT2M4S\",\n        \"dimension\": \"2d\",\n        \"definition\":
-        \"hd\",\n        \"caption\": \"true\",\n        \"licensedContent\": false,\n
-        \       \"contentRating\": {},\n        \"projection\": \"rectangular\"\n
-        \     }\n    }\n  ],\n  \"pageInfo\": {\n    \"totalResults\": 1,\n    \"resultsPerPage\":
-        1\n  }\n}\n"
-    headers:
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/json; charset=UTF-8
-      Date:
-      - Sat, 23 Aug 2025 02:28:21 GMT
-      Server:
-      - scaffolding on HTTPServer2
-      Transfer-Encoding:
-      - chunked
-      Vary:
-      - Origin
-      - X-Origin
-      - Referer
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-XSS-Protection:
-      - '0'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - python-requests/2.32.4
-    method: GET
-    uri: https://www.googleapis.com/youtube/v3/videos?id=iP2lm2wdlQg&key=DUMMY&part=contentDetails
-  response:
-    body:
-      string: "{\n  \"kind\": \"youtube#videoListResponse\",\n  \"etag\": \"KzahwTzYvffpRKxJXE5_oc402dI\",\n
-        \ \"items\": [\n    {\n      \"kind\": \"youtube#video\",\n      \"etag\":
-        \"UeG8zAgYS4xO1K7N8Pa19bai-VY\",\n      \"id\": \"iP2lm2wdlQg\",\n      \"contentDetails\":
-        {\n        \"duration\": \"PT19S\",\n        \"dimension\": \"2d\",\n        \"definition\":
-        \"hd\",\n        \"caption\": \"true\",\n        \"licensedContent\": false,\n
-        \       \"contentRating\": {},\n        \"projection\": \"rectangular\"\n
-        \     }\n    }\n  ],\n  \"pageInfo\": {\n    \"totalResults\": 1,\n    \"resultsPerPage\":
-        1\n  }\n}\n"
-    headers:
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/json; charset=UTF-8
-      Date:
-      - Sat, 23 Aug 2025 02:28:21 GMT
-      Server:
-      - scaffolding on HTTPServer2
-      Transfer-Encoding:
-      - chunked
-      Vary:
-      - Origin
-      - X-Origin
-      - Referer
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-XSS-Protection:
-      - '0'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - python-requests/2.32.4
-    method: GET
-    uri: https://www.googleapis.com/youtube/v3/videos?id=2U89cLw4u-A&key=DUMMY&part=contentDetails
-  response:
-    body:
-      string: "{\n  \"kind\": \"youtube#videoListResponse\",\n  \"etag\": \"Dks8EeSe4ofAVnvaiTH2ijCdmS0\",\n
-        \ \"items\": [\n    {\n      \"kind\": \"youtube#video\",\n      \"etag\":
-        \"rtQ7C2VoUXR7LC2KcJRRaPyEV_Y\",\n      \"id\": \"2U89cLw4u-A\",\n      \"contentDetails\":
-        {\n        \"duration\": \"PT58S\",\n        \"dimension\": \"2d\",\n        \"definition\":
-        \"hd\",\n        \"caption\": \"true\",\n        \"licensedContent\": false,\n
-        \       \"contentRating\": {},\n        \"projection\": \"rectangular\"\n
-        \     }\n    }\n  ],\n  \"pageInfo\": {\n    \"totalResults\": 1,\n    \"resultsPerPage\":
-        1\n  }\n}\n"
-    headers:
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/json; charset=UTF-8
-      Date:
-      - Sat, 23 Aug 2025 02:28:21 GMT
-      Server:
-      - scaffolding on HTTPServer2
-      Transfer-Encoding:
-      - chunked
-      Vary:
-      - Origin
-      - X-Origin
-      - Referer
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-XSS-Protection:
-      - '0'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - python-requests/2.32.4
-    method: GET
-    uri: https://www.googleapis.com/youtube/v3/videos?id=Pofx_TKEce0&key=DUMMY&part=contentDetails
-  response:
-    body:
-      string: "{\n  \"kind\": \"youtube#videoListResponse\",\n  \"etag\": \"2qooJq9-3dpn7RG_Y5gnZodCJlk\",\n
-        \ \"items\": [\n    {\n      \"kind\": \"youtube#video\",\n      \"etag\":
-        \"6xvr5HWfxp2JEY9o7vptPs7eEoM\",\n      \"id\": \"Pofx_TKEce0\",\n      \"contentDetails\":
-        {\n        \"duration\": \"PT1M52S\",\n        \"dimension\": \"2d\",\n        \"definition\":
-        \"hd\",\n        \"caption\": \"true\",\n        \"licensedContent\": false,\n
-        \       \"contentRating\": {},\n        \"projection\": \"rectangular\"\n
-        \     }\n    }\n  ],\n  \"pageInfo\": {\n    \"totalResults\": 1,\n    \"resultsPerPage\":
-        1\n  }\n}\n"
-    headers:
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/json; charset=UTF-8
-      Date:
-      - Sat, 23 Aug 2025 02:28:21 GMT
-      Server:
-      - scaffolding on HTTPServer2
-      Transfer-Encoding:
-      - chunked
-      Vary:
-      - Origin
-      - X-Origin
-      - Referer
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-XSS-Protection:
-      - '0'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - python-requests/2.32.4
-    method: GET
-    uri: https://www.googleapis.com/youtube/v3/videos?id=yZR3isciWd8&key=DUMMY&part=contentDetails
-  response:
-    body:
-      string: "{\n  \"kind\": \"youtube#videoListResponse\",\n  \"etag\": \"2JYe2DESYtABfKKm59ZOOS5e0QU\",\n
-        \ \"items\": [\n    {\n      \"kind\": \"youtube#video\",\n      \"etag\":
-        \"wmt2Rc-L4Dk2qUA9nzSVCOUiYcI\",\n      \"id\": \"yZR3isciWd8\",\n      \"contentDetails\":
-        {\n        \"duration\": \"PT5M56S\",\n        \"dimension\": \"2d\",\n        \"definition\":
-        \"hd\",\n        \"caption\": \"true\",\n        \"licensedContent\": false,\n
-        \       \"contentRating\": {},\n        \"projection\": \"rectangular\"\n
-        \     }\n    }\n  ],\n  \"pageInfo\": {\n    \"totalResults\": 1,\n    \"resultsPerPage\":
-        1\n  }\n}\n"
-    headers:
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/json; charset=UTF-8
-      Date:
-      - Sat, 23 Aug 2025 02:28:22 GMT
-      Server:
-      - scaffolding on HTTPServer2
-      Transfer-Encoding:
-      - chunked
-      Vary:
-      - Origin
-      - X-Origin
-      - Referer
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-XSS-Protection:
-      - '0'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - python-requests/2.32.4
-    method: GET
-    uri: https://www.googleapis.com/youtube/v3/videos?id=njDochQ2zHs&key=DUMMY&part=contentDetails
-  response:
-    body:
-      string: "{\n  \"kind\": \"youtube#videoListResponse\",\n  \"etag\": \"YDo3pacNDrXynwyJi10xsr1HS70\",\n
-        \ \"items\": [\n    {\n      \"kind\": \"youtube#video\",\n      \"etag\":
-        \"TG_t41NNri7V_2C1ODwBCCTlFiU\",\n      \"id\": \"njDochQ2zHs\",\n      \"contentDetails\":
-        {\n        \"duration\": \"PT31M10S\",\n        \"dimension\": \"2d\",\n        \"definition\":
-        \"hd\",\n        \"caption\": \"true\",\n        \"licensedContent\": false,\n
-        \       \"contentRating\": {},\n        \"projection\": \"rectangular\"\n
-        \     }\n    }\n  ],\n  \"pageInfo\": {\n    \"totalResults\": 1,\n    \"resultsPerPage\":
-        1\n  }\n}\n"
-    headers:
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/json; charset=UTF-8
-      Date:
-      - Sat, 23 Aug 2025 02:28:22 GMT
-      Server:
-      - scaffolding on HTTPServer2
-      Transfer-Encoding:
-      - chunked
-      Vary:
-      - Origin
-      - X-Origin
-      - Referer
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-XSS-Protection:
-      - '0'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - python-requests/2.32.4
-    method: GET
-    uri: https://www.googleapis.com/youtube/v3/videos?id=7-p_5GVi2PU&key=DUMMY&part=contentDetails
-  response:
-    body:
-      string: "{\n  \"kind\": \"youtube#videoListResponse\",\n  \"etag\": \"uMcuBQr9kTvCmFejQTjZLtvdGvs\",\n
-        \ \"items\": [\n    {\n      \"kind\": \"youtube#video\",\n      \"etag\":
-        \"F_GVZ4rVFDJpR5zIYsvFis8_SEs\",\n      \"id\": \"7-p_5GVi2PU\",\n      \"contentDetails\":
-        {\n        \"duration\": \"PT45S\",\n        \"dimension\": \"2d\",\n        \"definition\":
-        \"hd\",\n        \"caption\": \"true\",\n        \"licensedContent\": false,\n
-        \       \"contentRating\": {},\n        \"projection\": \"rectangular\"\n
-        \     }\n    }\n  ],\n  \"pageInfo\": {\n    \"totalResults\": 1,\n    \"resultsPerPage\":
-        1\n  }\n}\n"
-    headers:
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/json; charset=UTF-8
-      Date:
-      - Sat, 23 Aug 2025 02:28:22 GMT
-      Server:
-      - scaffolding on HTTPServer2
-      Transfer-Encoding:
-      - chunked
-      Vary:
-      - Origin
-      - X-Origin
-      - Referer
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-XSS-Protection:
-      - '0'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - python-requests/2.32.4
-    method: GET
-    uri: https://www.googleapis.com/youtube/v3/videos?id=hwLgGcwUTk8&key=DUMMY&part=contentDetails
-  response:
-    body:
-      string: "{\n  \"kind\": \"youtube#videoListResponse\",\n  \"etag\": \"33a317KU78Gb5w_Lc503yYG8ZWI\",\n
-        \ \"items\": [\n    {\n      \"kind\": \"youtube#video\",\n      \"etag\":
-        \"mJajYj3SEsbNVYIwfm70GMLThmE\",\n      \"id\": \"hwLgGcwUTk8\",\n      \"contentDetails\":
-        {\n        \"duration\": \"PT55S\",\n        \"dimension\": \"2d\",\n        \"definition\":
-        \"hd\",\n        \"caption\": \"true\",\n        \"licensedContent\": false,\n
-        \       \"contentRating\": {},\n        \"projection\": \"rectangular\"\n
-        \     }\n    }\n  ],\n  \"pageInfo\": {\n    \"totalResults\": 1,\n    \"resultsPerPage\":
-        1\n  }\n}\n"
-    headers:
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/json; charset=UTF-8
-      Date:
-      - Sat, 23 Aug 2025 02:28:22 GMT
-      Server:
-      - scaffolding on HTTPServer2
-      Transfer-Encoding:
-      - chunked
-      Vary:
-      - Origin
-      - X-Origin
-      - Referer
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-XSS-Protection:
-      - '0'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - python-requests/2.32.4
-    method: GET
-    uri: https://www.googleapis.com/youtube/v3/videos?id=YmzHUQRPg0k&key=DUMMY&part=contentDetails
-  response:
-    body:
-      string: "{\n  \"kind\": \"youtube#videoListResponse\",\n  \"etag\": \"6lKdLgqdTfvlN9K7eFeOidogjhQ\",\n
-        \ \"items\": [\n    {\n      \"kind\": \"youtube#video\",\n      \"etag\":
-        \"dVe1giSWGNbu4CcZ82-xbY1iwAA\",\n      \"id\": \"YmzHUQRPg0k\",\n      \"contentDetails\":
-        {\n        \"duration\": \"PT54S\",\n        \"dimension\": \"2d\",\n        \"definition\":
-        \"hd\",\n        \"caption\": \"true\",\n        \"licensedContent\": false,\n
-        \       \"contentRating\": {},\n        \"projection\": \"rectangular\"\n
-        \     }\n    }\n  ],\n  \"pageInfo\": {\n    \"totalResults\": 1,\n    \"resultsPerPage\":
-        1\n  }\n}\n"
-    headers:
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/json; charset=UTF-8
-      Date:
-      - Sat, 23 Aug 2025 02:28:22 GMT
-      Server:
-      - scaffolding on HTTPServer2
-      Transfer-Encoding:
-      - chunked
-      Vary:
-      - Origin
-      - X-Origin
-      - Referer
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-XSS-Protection:
-      - '0'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - python-requests/2.32.4
-    method: GET
-    uri: https://www.googleapis.com/youtube/v3/videos?id=-miCU6FGfMg&key=DUMMY&part=contentDetails
-  response:
-    body:
-      string: "{\n  \"kind\": \"youtube#videoListResponse\",\n  \"etag\": \"m0OaEqtzuZa47xc4LnK6YOjEO0w\",\n
-        \ \"items\": [\n    {\n      \"kind\": \"youtube#video\",\n      \"etag\":
-        \"GHbMWQEBVDEhGs9GeVY1NrwtF-4\",\n      \"id\": \"-miCU6FGfMg\",\n      \"contentDetails\":
-        {\n        \"duration\": \"PT1M17S\",\n        \"dimension\": \"2d\",\n        \"definition\":
-        \"hd\",\n        \"caption\": \"true\",\n        \"licensedContent\": false,\n
-        \       \"contentRating\": {},\n        \"projection\": \"rectangular\"\n
-        \     }\n    }\n  ],\n  \"pageInfo\": {\n    \"totalResults\": 1,\n    \"resultsPerPage\":
-        1\n  }\n}\n"
-    headers:
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/json; charset=UTF-8
-      Date:
-      - Sat, 23 Aug 2025 02:28:22 GMT
-      Server:
-      - scaffolding on HTTPServer2
-      Transfer-Encoding:
-      - chunked
-      Vary:
-      - Origin
-      - X-Origin
-      - Referer
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-XSS-Protection:
-      - '0'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - python-requests/2.32.4
-    method: GET
-    uri: https://www.googleapis.com/youtube/v3/videos?id=AVuFNjyU4Pc&key=DUMMY&part=contentDetails
-  response:
-    body:
-      string: "{\n  \"kind\": \"youtube#videoListResponse\",\n  \"etag\": \"hlpgLa9wDBLxVyiQ_4wYUZkyQ8g\",\n
-        \ \"items\": [\n    {\n      \"kind\": \"youtube#video\",\n      \"etag\":
-        \"2wiX9nnaq9VCYkkuPHvUVyLn7TI\",\n      \"id\": \"AVuFNjyU4Pc\",\n      \"contentDetails\":
-        {\n        \"duration\": \"PT5S\",\n        \"dimension\": \"2d\",\n        \"definition\":
-        \"hd\",\n        \"caption\": \"true\",\n        \"licensedContent\": false,\n
-        \       \"contentRating\": {},\n        \"projection\": \"rectangular\"\n
-        \     }\n    }\n  ],\n  \"pageInfo\": {\n    \"totalResults\": 1,\n    \"resultsPerPage\":
-        1\n  }\n}\n"
-    headers:
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/json; charset=UTF-8
-      Date:
-      - Sat, 23 Aug 2025 02:28:22 GMT
-      Server:
-      - scaffolding on HTTPServer2
-      Transfer-Encoding:
-      - chunked
-      Vary:
-      - Origin
-      - X-Origin
-      - Referer
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-XSS-Protection:
-      - '0'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - python-requests/2.32.4
-    method: GET
-    uri: https://www.googleapis.com/youtube/v3/videos?id=n_fb2t8QLAs&key=DUMMY&part=contentDetails
-  response:
-    body:
-      string: "{\n  \"kind\": \"youtube#videoListResponse\",\n  \"etag\": \"mAUXNOZKKL_Jye1RelFp6gYhmbQ\",\n
-        \ \"items\": [\n    {\n      \"kind\": \"youtube#video\",\n      \"etag\":
-        \"SIQHONYoCrNCOaJ4a69RLPj3vLA\",\n      \"id\": \"n_fb2t8QLAs\",\n      \"contentDetails\":
-        {\n        \"duration\": \"PT1M14S\",\n        \"dimension\": \"2d\",\n        \"definition\":
-        \"hd\",\n        \"caption\": \"true\",\n        \"licensedContent\": false,\n
-        \       \"contentRating\": {},\n        \"projection\": \"rectangular\"\n
-        \     }\n    }\n  ],\n  \"pageInfo\": {\n    \"totalResults\": 1,\n    \"resultsPerPage\":
-        1\n  }\n}\n"
-    headers:
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/json; charset=UTF-8
-      Date:
-      - Sat, 23 Aug 2025 02:28:23 GMT
-      Server:
-      - scaffolding on HTTPServer2
-      Transfer-Encoding:
-      - chunked
-      Vary:
-      - Origin
-      - X-Origin
-      - Referer
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-XSS-Protection:
-      - '0'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - python-requests/2.32.4
-    method: GET
-    uri: https://www.googleapis.com/youtube/v3/videos?id=4xlwlU6h-wM&key=DUMMY&part=contentDetails
-  response:
-    body:
-      string: "{\n  \"kind\": \"youtube#videoListResponse\",\n  \"etag\": \"Of4ETCoi8Aff5iK95PPWBVvU8Sk\",\n
-        \ \"items\": [\n    {\n      \"kind\": \"youtube#video\",\n      \"etag\":
-        \"_nxS_FjMLDktpxjAawn1PSe1SZI\",\n      \"id\": \"4xlwlU6h-wM\",\n      \"contentDetails\":
-        {\n        \"duration\": \"PT40M14S\",\n        \"dimension\": \"2d\",\n        \"definition\":
-        \"hd\",\n        \"caption\": \"true\",\n        \"licensedContent\": false,\n
-        \       \"contentRating\": {},\n        \"projection\": \"rectangular\"\n
-        \     }\n    }\n  ],\n  \"pageInfo\": {\n    \"totalResults\": 1,\n    \"resultsPerPage\":
-        1\n  }\n}\n"
-    headers:
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/json; charset=UTF-8
-      Date:
-      - Sat, 23 Aug 2025 02:28:23 GMT
+      - Fri, 29 Aug 2025 21:23:08 GMT
       Server:
       - scaffolding on HTTPServer2
       Transfer-Encoding:

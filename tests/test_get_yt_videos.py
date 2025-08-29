@@ -45,7 +45,7 @@ def test_get_uploads_playlist_id_failure():
 @pytest.mark.vcr
 def test_get_channel_videos_success():
     channel_id = get_channel_id("GoogleDevelopers", API_KEY)
-    videos = get_channel_videos(channel_id, API_KEY, max_num_of_videos=2)
+    videos = get_channel_videos(channel_id, API_KEY, max_num_of_videos=2, min_duration=0)
 
     assert isinstance(videos, list)
     assert len(videos) == 2
@@ -73,8 +73,51 @@ def test_get_channel_videos_skips_short(mock_get, mock_duration, mock_playlist_i
         ]
     }
 
-    videos = get_channel_videos("channel123", "fake_key")
+    videos = get_channel_videos(channel_id="channel123", api_key="fake_key", max_num_of_videos=1, min_duration=900)
     assert videos == []
+
+@patch("video_to_text.get_yt_videos.get_uploads_playlist_id")
+@patch("video_to_text.get_yt_videos.get_video_duration")
+@patch("video_to_text.get_yt_videos.requests.get")
+def test_get_channel_videos_returns_all_when_min_video_is_none(mock_get, mock_duration, mock_playlist_id):
+    # Mock video duration shorter than MIN_VIDEO_DURATION
+    mock_duration.return_value = 10
+    mock_playlist_id.return_value = "fake-playlist-id"
+
+    mock_get.return_value.json.return_value = {
+        "items": [
+            {
+                "id": {"videoId": "vid123"},
+                "contentDetails": {
+                    "videoId": "video123",
+                    "videoPublishedAt": "2025-01-01T00:00:00Z"},
+                "snippet": {"title": "1st Video", "publishedAt": "2025-01-01T00:00:00Z"}
+            },
+            {
+                "id": {"videoId": "vid234"},
+                "contentDetails": {
+                    "videoId": "video234",
+                    "videoPublishedAt": "2025-01-01T00:00:00Z"},
+                "snippet": {"title": "2nd Video", "publishedAt": "2025-01-01T00:00:00Z"}
+            }
+
+        ]
+    }
+
+    videos = get_channel_videos(channel_id="channel123", api_key="fake_key", max_num_of_videos=None, min_duration=0)
+    assert len(videos) == 2
+    assert videos == [
+        {
+            'PublishedAt': '2025-01-01T00:00:00Z',
+            'Title': '1st Video',
+            'URL': 'https://www.youtube.com/watch?v=video123'
+        },
+        {
+            'PublishedAt': '2025-01-01T00:00:00Z',
+            'Title': '2nd Video',
+            'URL': 'https://www.youtube.com/watch?v=video234'
+        }
+    ]
 
 @patch("video_to_text.get_yt_videos.get_uploads_playlist_id")
 @patch("video_to_text.get_yt_videos.get_video_duration")
@@ -88,7 +131,7 @@ def test_get_channel_videos_no_video_present(mock_get, mock_duration, mock_playl
         "items": []
     }
 
-    videos = get_channel_videos("channel123", "fake_key")
+    videos = get_channel_videos(channel_id="channel123", api_key="fake_key", max_num_of_videos=1, min_duration=900)
     assert videos == []
 
 @patch("video_to_text.get_yt_videos.requests.get")

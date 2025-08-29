@@ -2,16 +2,13 @@ import logging
 from faster_whisper import WhisperModel
 from pathlib import Path
 
-from video_to_text.constants import TRANSCRIPT_LOCATION
-
-def transcribe_audio(audio_path: str, title: str):
+def transcribe_audio(audio_path: str, title: str, output_dir: Path):
     model = WhisperModel("medium", device="cpu", compute_type="int8")
     segments, info = model.transcribe(audio=audio_path)
     logging.info("Successfully transcribed audio. Writing to file ...")
 
-    folder_path = Path.home() / TRANSCRIPT_LOCATION
-    folder_path.mkdir(parents=True, exist_ok=True)
-    filepath = folder_path / f"{title}.txt"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    filepath = output_dir / f"{title}.txt"
     filepath.unlink(missing_ok=True)
 
     for segment in segments:

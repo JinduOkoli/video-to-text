@@ -4,3 +4,5 @@ isodate>=0.7.2
 python-dotenv>=1.1.1
 requests>=2.32.4
 yt-dlp>=2025.8.11
+pytest>=8.2.0
+pytest-vcr>=1.0.2

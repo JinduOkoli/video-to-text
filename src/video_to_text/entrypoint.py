@@ -44,8 +44,18 @@ logger = logging.getLogger(__name__)
     show_default=True,
     help="Minimum duration of video to be retrieved from channel."
 )
+@click.option(
+    "--start-date", "-s",
+    type=click.DateTime(formats=["%Y-%m-%d"]),
+    help="Only include videos published on or after this date (YYYY-MM-DD)"
+)
+@click.option(
+    "--end-date", "-e",
+    type=click.DateTime(formats=["%Y-%m-%d"]),
+    help="Only include videos published on or before this date (YYYY-MM-DD)"
+)
 @click.help_option("-h", "--help")
-def main(channel_name, output_dir, max_videos, min_duration):
+def main(channel_name, output_dir, max_videos, min_duration, start_date, end_date):
     click.echo("Starting video transcription...")
     tempdir = tempfile.TemporaryDirectory()
 
@@ -53,7 +63,9 @@ def main(channel_name, output_dir, max_videos, min_duration):
     videos = get_channel_videos(channel_id=channel_id,
                                 api_key=API_KEY,
                                 max_num_of_videos=max_videos,
-                                min_duration=min_duration)
+                                min_duration=min_duration,
+                                start_date=start_date,
+                                end_date=end_date)
 
     for video in videos:
         audio_name = download_audio(youtube_url=video["URL"], tempdir=tempdir.name)

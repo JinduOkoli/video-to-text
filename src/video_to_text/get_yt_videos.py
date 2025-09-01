@@ -3,10 +3,12 @@ import logging
 import isodate
 import requests
 
+from datetime import datetime
 from typing import List
 
 from video_to_text.constants import YOUTUBE_API_URL
 from video_to_text.exceptions import YouTubeAPIException
+from video_to_text.helper import convert_iso_to_datetime
 
 logger = logging.getLogger(__name__)
 
@@ -79,7 +81,9 @@ def get_uploads_playlist_id(channel_id: str, api_key: str) -> str:
 def get_channel_videos(channel_id: str,
                        api_key: str,
                        max_num_of_videos: int|None,
-                       min_duration: int) -> List:
+                       min_duration: int,
+                       start_date: datetime|None = None,
+                       end_date: datetime|None = None) -> List:
     """
     Retrieve videos from YouTube channel
 
@@ -87,6 +91,8 @@ def get_channel_videos(channel_id: str,
     :param api_key: API key for authentication
     :param max_num_of_videos: Maximum number of videos to retrieve
     :param min_duration: Minimum duration of the video to retrieve
+    :param start_date: Include videos published on or after this date
+    :param end_date: Include videos published on or before this date
     :return: List of videos
     """
     videos = []
@@ -118,8 +124,13 @@ def get_channel_videos(channel_id: str,
                 title = item["snippet"]["title"]
                 published_at = item["snippet"]["publishedAt"]
                 duration = get_video_duration(video_id=video_id, api_key=api_key)
+                published_at_datetime = convert_iso_to_datetime(published_at)
 
-                if duration < min_duration:
+                if (
+                        duration < min_duration
+                        or (start_date and published_at_datetime.date() < start_date.date())
+                        or (end_date and published_at_datetime.date() > end_date.date())
+                ):
                     continue
 
                 videos.append({

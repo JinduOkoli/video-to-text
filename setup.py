@@ -13,8 +13,10 @@ setup(
         "requests>=2.32.0",
         "python-dotenv>=1.1.0",
         "isodate>=0.7.2",
+        "tenacity>=9.1.2"
     ],
     extras_require={
+        "gpu": ["torch>=2.1.0"],
         "dev": [
             "pytest>=8.4.1",
             "pytest-vcr>=1.0.2",

@@ -71,7 +71,7 @@ def test_get_uploads_playlist_id_failure(api_key):
 @pytest.mark.vcr
 def test_get_channel_videos_success(api_key):
     channel_id = get_channel_id("GoogleDevelopers", api_key)
-    videos = get_channel_videos(channel_id, api_key, max_num_of_videos=2, min_duration=0)
+    videos = get_channel_videos(channel_id, api_key, max_num_of_videos=2)
 
     assert isinstance(videos, list)
     assert len(videos) == 2
@@ -79,12 +79,27 @@ def test_get_channel_videos_success(api_key):
     assert all("URL" in v for v in videos)
     assert all("PublishedAt" in v for v in videos)
 
+@pytest.mark.parametrize(
+    "mock_duration_val,min_d,max_d,should_skip",
+    [
+        (10, 60, None, True),     # too short
+        (120, 60, None, False),   # valid, above min
+        (500, None, 400, True),   # too long
+        (300, None, 400, False),  # valid, under max
+        (150, 100, 300, False),   # valid, within both bounds
+        (50, 100, 300, True),     # too short, fails min
+        (400, 100, 300, True),    # too long, fails max
+    ],
+)
 @patch("video_to_text.get_yt_videos.get_uploads_playlist_id")
 @patch("video_to_text.get_yt_videos.get_video_duration")
 @patch("video_to_text.get_yt_videos.requests.get")
-def test_get_channel_videos_skips_short(mock_get, mock_duration, mock_playlist_id):
-    # Mock video duration shorter than MIN_VIDEO_DURATION
-    mock_duration.return_value = 10
+def test_get_channel_videos_duration_filter(
+        mock_get, mock_duration, mock_playlist_id,
+        mock_duration_val, min_d, max_d, should_skip
+):
+    # Arrange
+    mock_duration.return_value = mock_duration_val
     mock_playlist_id.return_value = "fake-playlist-id"
 
     mock_get.return_value.json.return_value = {
@@ -94,13 +109,29 @@ def test_get_channel_videos_skips_short(mock_get, mock_duration, mock_playlist_i
                 "contentDetails": {
                     "videoId": "video123",
                     "videoPublishedAt": "2025-01-01T00:00:00Z"},
-                "snippet": {"title": "Too Short", "publishedAt": "2025-01-01T00:00:00Z"}
+                "snippet": {
+                    "title": "Sample Video",
+                    "publishedAt": "2025-01-01T00:00:00Z"
+                }
             }
         ]
     }
 
-    videos = get_channel_videos(channel_id="channel123", api_key="fake_key", max_num_of_videos=1, min_duration=900)
-    assert videos == []
+    # Act
+    videos = get_channel_videos(
+        channel_id="fake-channel",
+        api_key="fake_key",
+        max_num_of_videos=1,
+        min_duration=min_d,
+        max_duration=max_d
+    )
+
+    # Assert
+    if should_skip:
+        assert videos == []
+    else:
+        assert len(videos) == 1
+        assert videos[0]["Title"] == "Sample Video"
 
 @patch("video_to_text.get_yt_videos.get_uploads_playlist_id")
 @patch("video_to_text.get_yt_videos.get_video_duration")
@@ -112,7 +143,7 @@ def test_get_channel_videos_returns_all_when_min_video_is_none(mock_get, mock_du
 
     mock_get.return_value.json.return_value = fake_videos
 
-    videos = get_channel_videos(channel_id="channel123", api_key="fake_key", max_num_of_videos=None, min_duration=0)
+    videos = get_channel_videos(channel_id="channel123", api_key="fake_key", max_num_of_videos=None)
     assert len(videos) == 3
     assert videos == [
         {
@@ -144,7 +175,7 @@ def test_get_channel_videos_no_video_present(mock_get, mock_duration, mock_playl
         "items": []
     }
 
-    videos = get_channel_videos(channel_id="channel123", api_key="fake_key", max_num_of_videos=1, min_duration=900)
+    videos = get_channel_videos(channel_id="channel123", api_key="fake_key", max_num_of_videos=1)
     assert videos == []
 
 @pytest.mark.parametrize(
@@ -185,7 +216,6 @@ def test_get_channel_videos_date_range(mock_get, mock_duration, mock_playlist_id
     videos = get_channel_videos(channel_id="channel123",
                                 api_key="fake_key",
                                 max_num_of_videos=None,
-                                min_duration=0,
                                 start_date=start_date,
                                 end_date=end_date)
     titles = [v["Title"] for v in videos]

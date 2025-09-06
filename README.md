@@ -32,14 +32,17 @@ video-to-text --channel-name "CHANNEL_NAME"
 
 ### Options
 
-| Option           | Short | Default           | Description                                                 |
-|------------------|-------|-------------------|-------------------------------------------------------------|
-| `--channel-name` | `-c`  | **Required**      | YouTube channel name to fetch videos from                   |
-| `--output-dir`   | `-o`  | `~/video_to_text` | Directory to save transcripts                               |
-| `--max-videos`   | `-m`  | `10`              | Max number of videos to download                            |
-| `--min-duration` | '-d'  | '900'             | Minimum duration of video to be retrieved from channel      |
-| `--start-date`   | '-s'  | 'None'            | Include videos published on or after this date (YYYY-MM-DD) |
-| `--end-date`     | '-e'  | 'None'            | Include videos published on or before this date (YYYY-MM-DD)|
+| Option           | Short | Default           | Description                                                    |
+|------------------|-------|-------------------|----------------------------------------------------------------|
+| `--channel-name` | `-c`  | **Required**      | YouTube channel name to fetch videos from                      |
+| `--output-dir`   | `-o`  | `~/video_to_text` | Directory to save transcripts                                  |
+| `--max-videos`   | `-m`  | `10`              | Max number of videos to download                               |
+| `--min-duration` | '-n'  | 'None'            | Minimum duration of video to be retrieved from channel         |
+| `--max-duration` | '-x'  | 'None'            | Minimum duration of video to be retrieved from channel         |
+| `--start-date`   | '-s'  | 'None'            | Include videos published on or after this date (YYYY-MM-DD)    |
+| `--end-date`     | '-e'  | 'None'            | Include videos published on or before this date (YYYY-MM-DD)   |
+| `--save-as-text` | '-t'  | 'False'           | Save transcribed audio in .text file                           |
+
 
 
 #### Get 10 latest videos

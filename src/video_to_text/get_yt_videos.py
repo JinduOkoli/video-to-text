@@ -4,7 +4,7 @@ import isodate
 import requests
 
 from datetime import datetime
-from typing import List
+from typing import List, Optional
 
 from video_to_text.constants import YOUTUBE_API_URL
 from video_to_text.exceptions import YouTubeAPIException
@@ -80,10 +80,11 @@ def get_uploads_playlist_id(channel_id: str, api_key: str) -> str:
 
 def get_channel_videos(channel_id: str,
                        api_key: str,
-                       max_num_of_videos: int|None,
-                       min_duration: int,
-                       start_date: datetime|None = None,
-                       end_date: datetime|None = None) -> List:
+                       max_num_of_videos: Optional[int],
+                       min_duration: Optional[int] = None,
+                       max_duration: Optional[int] = None,
+                       start_date: Optional[datetime] = None,
+                       end_date: Optional[datetime] = None) -> List:
     """
     Retrieve videos from YouTube channel
 
@@ -91,6 +92,7 @@ def get_channel_videos(channel_id: str,
     :param api_key: API key for authentication
     :param max_num_of_videos: Maximum number of videos to retrieve
     :param min_duration: Minimum duration of the video to retrieve
+    :param max_duration: Maximum duration of the video to retrieve
     :param start_date: Include videos published on or after this date
     :param end_date: Include videos published on or before this date
     :return: List of videos
@@ -127,7 +129,8 @@ def get_channel_videos(channel_id: str,
                 published_at_datetime = convert_iso_to_datetime(published_at)
 
                 if (
-                        duration < min_duration
+                        (min_duration and duration < min_duration)
+                        or (max_duration and duration > max_duration)
                         or (start_date and published_at_datetime.date() < start_date.date())
                         or (end_date and published_at_datetime.date() > end_date.date())
                 ):
@@ -166,6 +169,7 @@ def get_video_duration(video_id: str, api_key: str) -> int:
     }
     try:
         url = f"{YOUTUBE_API_URL}/videos"
+        logger.debug(f"Retrieving video duration from {url}. Video ID: {video_id}")
         resp = requests.get(url=url, params=params)
 
         if not resp.ok:

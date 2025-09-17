@@ -1,0 +1,14 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore Git history
+.git
+.gitignore
+
+# Ignore local files
+*.log
+*.tmp
+
+# Ignore environment files
+.env

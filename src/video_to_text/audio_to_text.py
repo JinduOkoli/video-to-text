@@ -34,7 +34,7 @@ def transcribe_audio(audio_path: str, video: Dict, output_dir: Path, save_as_tex
     segments, info = model.transcribe(audio=audio_path, log_progress=True)
     logger.info("Successfully transcribed audio. Compiling segments ...")
 
-    filepath = output_dir / f"{video["PublishedAt"]}_{video["Title"]}].txt"
+    filepath = output_dir / f"{video['PublishedAt']}_{video['Title']}].txt"
 
     audio_text = " ".join(s.text for s in segments)
 

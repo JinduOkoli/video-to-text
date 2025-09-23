@@ -20,15 +20,20 @@ def init_db(db_file):
         """)
         conn.commit()
 
-def save_to_db(video_url, title, published_at, audio_text, db_file):
+def save_to_db(video_url, title, published_at, audio_text, db_file) -> int:
     try:
         with sqlite3.connect(db_file, timeout=30) as conn:
             logger.info("Writing to DB")
-            conn.execute(
+
+            cur = conn.cursor()
+            cur.execute(
                 "INSERT OR REPLACE INTO transcripts (video_url, title, published_at, transcript) VALUES (?, ?, ?, ?)",
                 (video_url, title, published_at, audio_text)
             )
+            new_id = cur.lastrowid
             conn.commit()
+
+            return new_id
 
     except sqlite3.OperationalError as e:
         print(f"Could not write to DB: {e}")

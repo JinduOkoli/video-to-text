@@ -31,7 +31,7 @@ def download_audio(youtube_url, tempdir) -> str:
         info = ydl.extract_info(youtube_url)
 
         for fmt in info.get("requested_downloads", []):
-            logger.debug(f"Chosen format: id={fmt.get("format_id")} note={fmt.get("format_note")}")
+            logger.debug(f"Chosen format: id={fmt.get('format_id')} note={fmt.get('format_note')}")
 
         output_path = ydl.prepare_filename(info)
         file_path = yt_dlp.utils.replace_extension(output_path, "mp3")

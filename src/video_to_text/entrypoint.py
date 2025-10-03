@@ -18,8 +18,11 @@ logger = logging.getLogger(__name__)
 @click.command()
 @click.option(
     "--channel-name", "-c",
-    required=True,
     help="Name of the YouTube channel"
+)
+@click.option(
+    "--video-id", "-v",
+    help="ID of the video to be retrieved"
 )
 @click.option(
     "--output-dir", "-o",
@@ -63,10 +66,17 @@ show_default=True,
 help="Save transcribed audio in .text file"
 )
 @click.help_option("-h", "--help")
-def main(channel_name, output_dir, max_videos, min_duration, max_duration, start_date, end_date, save_as_text):
+def main(channel_name, video_id, output_dir, max_videos, min_duration, max_duration, start_date, end_date, save_as_text):
     click.echo("Starting video transcription...")
 
+    if channel_name and video_id:
+        raise click.UsageError("You must provide either --channel-name or --video-id and not both.")
+
+    if not channel_name and not video_id:
+        raise click.UsageError("You must provide either --channel-name or --video-id.")
+
     run_transcription(channel_name=channel_name,
+                      video_id=video_id,
                       output_dir=output_dir,
                       max_videos=max_videos,
                       min_duration=min_duration,

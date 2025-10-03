@@ -7,10 +7,11 @@ from video_to_text.audio_to_text import transcribe_audio
 from video_to_text.config import API_KEY
 from video_to_text.constants import DB_NAME
 from video_to_text.database import init_db, save_to_db
-from video_to_text.get_yt_videos import get_channel_id, get_channel_videos
+from video_to_text.get_yt_videos import get_channel_id, get_channel_videos, get_single_video
 from video_to_text.video_to_audio import download_audio
 
 def run_transcription(channel_name: str,
+                      video_id: str,
                       output_dir: Path,
                       max_videos: int,
                       min_duration: int,
@@ -22,6 +23,7 @@ def run_transcription(channel_name: str,
     Main logic that retrieves YouTube videos, downloads, transcribes abd saves in DB
 
     :param channel_name: Name of the YouTube channel
+    :param video_id: ID of the video to be retrieved
     :param output_dir: Directory to save transcribed text files
     :param max_videos: Max number of videos (integer) to fetch entire channel
     :param min_duration: Minimum duration of video to be retrieved from channel
@@ -39,14 +41,18 @@ def run_transcription(channel_name: str,
     # Initialize DB
     init_db(db_file=db_file)
 
-    channel_id = get_channel_id(channel_name, API_KEY)
-    videos = get_channel_videos(channel_id=channel_id,
-                                api_key=API_KEY,
-                                max_num_of_videos=max_videos,
-                                min_duration=min_duration,
-                                max_duration=max_duration,
-                                start_date=start_date,
-                                end_date=end_date)
+    if video_id:
+        videos = get_single_video(video_id=video_id,
+                                  api_key=API_KEY)
+    else:
+        channel_id = get_channel_id(channel_name, API_KEY)
+        videos = get_channel_videos(channel_id=channel_id,
+                                    api_key=API_KEY,
+                                    max_num_of_videos=max_videos,
+                                    min_duration=min_duration,
+                                    max_duration=max_duration,
+                                    start_date=start_date,
+                                    end_date=end_date)
 
     for video in videos:
         tempdir = tempfile.TemporaryDirectory()

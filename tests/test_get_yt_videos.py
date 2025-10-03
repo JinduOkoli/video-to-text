@@ -5,6 +5,7 @@ from unittest.mock import patch
 from video_to_text.exceptions import YouTubeAPIException
 from video_to_text.get_yt_videos import (
     get_channel_id,
+    get_single_video,
     get_channel_videos,
     parse_duration,
     get_video_duration,
@@ -78,6 +79,20 @@ def test_get_channel_videos_success(api_key):
     assert all("Title" in v for v in videos)
     assert all("URL" in v for v in videos)
     assert all("PublishedAt" in v for v in videos)
+
+@pytest.mark.vcr
+def test_get_single_video_success(api_key):
+    video_id="30Pme6UdUe0"
+    videos = get_single_video(video_id, api_key)
+    assert isinstance(videos, list)
+    assert len(videos) == 1
+    assert videos[0]["URL"] == f"https://www.youtube.com/watch?v={video_id}"
+
+def test_get_single_video_failure(api_key):
+    video_id="test"
+    videos = get_single_video(video_id, api_key)
+
+    assert videos == []
 
 @pytest.mark.parametrize(
     "mock_duration_val,min_d,max_d,should_skip",

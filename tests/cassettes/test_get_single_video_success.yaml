@@ -1,0 +1,91 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.4
+    method: GET
+    uri: https://www.googleapis.com/youtube/v3/videos?id=30Pme6UdUe0&key=DUMMY&part=snippet%2CcontentDetails
+  response:
+    body:
+      string: "{\n  \"kind\": \"youtube#videoListResponse\",\n  \"etag\": \"GoFBU7ib3DGM2GPGfUW54Mt7w2I\",\n
+        \ \"items\": [\n    {\n      \"kind\": \"youtube#video\",\n      \"etag\":
+        \"USpA-aG5PlJGGUcLCqQcBB_TZOk\",\n      \"id\": \"30Pme6UdUe0\",\n      \"snippet\":
+        {\n        \"publishedAt\": \"2025-09-18T04:00:04Z\",\n        \"channelId\":
+        \"UC_x5XG1OV2P6uZZ5FSM9Ttw\",\n        \"title\": \"What is multimodality?
+        A deep dive on multimodality in Gemma 3\",\n        \"description\": \"Explore
+        the power of Gemma 3 and its ability to understand and integrate information
+        from multiple sources, like images, text, and short videos. Aishwarya, a Research
+        Scientist on the Gemma team leading the multimodal efforts, shares how Gemma
+        3 delivers impressive performance across a range of tasks, from answering
+        questions to generating descriptive outputs, making it a versatile tool for
+        developers and researchers alike.\\n\\nChapters:\\n0:00 - Introduction\\n0:00
+        - What is multimodality?\\n0:00 - What can Gemma 3 do?\\n0:00 - Powerful vision
+        encoder\\n0:00 - Combining multilingual and multimodal\\n\\nSubscribe to Google
+        for Developers \u2192 https://goo.gle/developers \\n\\nSpeaker: Aishwarya
+        Kamath \\nProducts Mentioned: Gemma, Gemma 3\",\n        \"thumbnails\": {\n
+        \         \"default\": {\n            \"url\": \"https://i.ytimg.com/vi/30Pme6UdUe0/default.jpg\",\n
+        \           \"width\": 120,\n            \"height\": 90\n          },\n          \"medium\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/30Pme6UdUe0/mqdefault.jpg\",\n
+        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/30Pme6UdUe0/hqdefault.jpg\",\n
+        \           \"width\": 480,\n            \"height\": 360\n          },\n          \"standard\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/30Pme6UdUe0/sddefault.jpg\",\n
+        \           \"width\": 640,\n            \"height\": 480\n          },\n          \"maxres\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/30Pme6UdUe0/maxresdefault.jpg\",\n
+        \           \"width\": 1280,\n            \"height\": 720\n          }\n        },\n
+        \       \"channelTitle\": \"Google for Developers\",\n        \"tags\": [\n
+        \         \"Google\",\n          \"developers\",\n          \"pr_pr: Gemma;\",\n
+        \         \"Purpose: Learn;\",\n          \"Video Type:DevByte;\",\n          \"ct:
+        AIG;\",\n          \"gds:Yes;\"\n        ],\n        \"categoryId\": \"28\",\n
+        \       \"liveBroadcastContent\": \"none\",\n        \"defaultLanguage\":
+        \"en\",\n        \"localized\": {\n          \"title\": \"What is multimodality?
+        A deep dive on multimodality in Gemma 3\",\n          \"description\": \"Explore
+        the power of Gemma 3 and its ability to understand and integrate information
+        from multiple sources, like images, text, and short videos. Aishwarya, a Research
+        Scientist on the Gemma team leading the multimodal efforts, shares how Gemma
+        3 delivers impressive performance across a range of tasks, from answering
+        questions to generating descriptive outputs, making it a versatile tool for
+        developers and researchers alike.\\n\\nChapters:\\n0:00 - Introduction\\n0:00
+        - What is multimodality?\\n0:00 - What can Gemma 3 do?\\n0:00 - Powerful vision
+        encoder\\n0:00 - Combining multilingual and multimodal\\n\\nSubscribe to Google
+        for Developers \u2192 https://goo.gle/developers \\n\\nSpeaker: Aishwarya
+        Kamath \\nProducts Mentioned: Gemma, Gemma 3\"\n        },\n        \"defaultAudioLanguage\":
+        \"en\"\n      },\n      \"contentDetails\": {\n        \"duration\": \"PT6M19S\",\n
+        \       \"dimension\": \"2d\",\n        \"definition\": \"hd\",\n        \"caption\":
+        \"true\",\n        \"licensedContent\": false,\n        \"contentRating\":
+        {},\n        \"projection\": \"rectangular\"\n      }\n    }\n  ],\n  \"pageInfo\":
+        {\n    \"totalResults\": 1,\n    \"resultsPerPage\": 1\n  }\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 02 Oct 2025 20:29:30 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+version: 1

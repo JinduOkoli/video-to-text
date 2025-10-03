@@ -154,6 +154,46 @@ def get_channel_videos(channel_id: str,
 
     return videos
 
+def get_single_video(video_id: str, api_key: str):
+    """
+    Retrieve single video from YouTube channel
+
+    :param video_id: ID of the video to be retrieved
+    :param api_key: API key for authentication
+    :return: List of videos
+    """
+    video = []
+
+    params = {
+        "part": "snippet,contentDetails",
+        "id": f"{video_id}",
+        "key": api_key
+    }
+
+    try:
+        url = f"{YOUTUBE_API_URL}/videos"
+        logger.debug(f"Retrieving video from {url} with Video ID: {video_id}")
+        resp = requests.get(url=url, params=params)
+
+        if not resp.ok:
+            extract_error_message(resp, url)
+
+        res = resp.json()
+        for item in res.get("items", []):
+            title = item["snippet"]["title"]
+            published_at = item["snippet"]["publishedAt"]
+
+            video.append({
+                "Title": title,
+                "URL": f"https://www.youtube.com/watch?v={video_id}",
+                "PublishedAt": published_at
+            })
+
+    except (requests.HTTPError, ValueError, KeyError) as e:
+        raise YouTubeAPIException(e)
+
+    return video
+
 def get_video_duration(video_id: str, api_key: str) -> int:
     """
     Get duration of the YouTube video

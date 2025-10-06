@@ -2,6 +2,11 @@ from pydantic import BaseModel, conint, HttpUrl, ConfigDict
 from typing import Optional
 from datetime import datetime
 
+# ----- Video transcription -----
+class VideoTranscriptionRequest(BaseModel):
+    video_id: str
+    save_as_text: Optional[bool] = False
+
 # ----- Channel transcription -----
 class ChannelTranscriptionRequest(BaseModel):
     channel_name: str
@@ -18,7 +23,7 @@ class TranscriptionResult(BaseModel):
     published: datetime
     status: str
 
-class ChannelResponse(TranscriptionResult):
+class TranscriptionResponse(TranscriptionResult):
     db_id: int
 
     model_config = ConfigDict(from_attributes=True)

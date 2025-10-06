@@ -10,15 +10,15 @@ from video_to_text.database import init_db, save_to_db
 from video_to_text.get_yt_videos import get_channel_id, get_channel_videos, get_single_video
 from video_to_text.video_to_audio import download_audio
 
-def run_transcription(channel_name: str,
-                      video_id: str,
-                      output_dir: Path,
-                      max_videos: int,
-                      min_duration: int,
-                      max_duration: int,
-                      start_date: datetime,
-                      end_date: datetime,
-                      save_as_text: bool) -> List:
+def run_transcription(channel_name: str = None,
+                      video_id: str = None,
+                      output_dir: Path = None,
+                      max_videos: int = None,
+                      min_duration: int = None,
+                      max_duration: int = None,
+                      start_date: datetime = None,
+                      end_date: datetime = None,
+                      save_as_text: bool = False) -> List:
     """
     Main logic that retrieves YouTube videos, downloads, transcribes abd saves in DB
 

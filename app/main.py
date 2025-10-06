@@ -4,7 +4,7 @@ from fastapi import FastAPI, HTTPException
 from pathlib import Path
 from platformdirs import user_data_dir
 
-from .schemas import ChannelTranscriptionRequest
+from .schemas import ChannelTranscriptionRequest, VideoTranscriptionRequest
 from video_to_text.core import run_transcription
 
 logging.basicConfig(
@@ -18,6 +18,20 @@ logger = logging.getLogger(__name__)
 app = FastAPI()
 
 OUTPUT_DIR = Path(user_data_dir(appname="video-to-text"))
+
+@app.post("/transcribe/video")
+def transcribe_video(payload: VideoTranscriptionRequest):
+    try:
+        video_data = run_transcription(
+            video_id=payload.video_id,
+            output_dir=Path(OUTPUT_DIR),
+            save_as_text=payload.save_as_text
+        )
+        logger.info(f"Successfully transcribed {len(video_data)} video located at {OUTPUT_DIR}")
+        return {"transcriptions": video_data}
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/transcribe/channel")
 def transcribe_channel(payload: ChannelTranscriptionRequest):
@@ -37,5 +51,3 @@ def transcribe_channel(payload: ChannelTranscriptionRequest):
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-
-

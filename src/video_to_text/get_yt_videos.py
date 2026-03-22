@@ -138,6 +138,7 @@ def get_channel_videos(channel_id: str,
 
                 videos.append({
                     "Title": title,
+                    "Id": video_id,
                     "URL": f"https://www.youtube.com/watch?v={video_id}",
                     "PublishedAt": published_at
                 })
@@ -185,6 +186,7 @@ def get_single_video(video_id: str, api_key: str):
 
             video.append({
                 "Title": title,
+                "Id": video_id,
                 "URL": f"https://www.youtube.com/watch?v={video_id}",
                 "PublishedAt": published_at
             })

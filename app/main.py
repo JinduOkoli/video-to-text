@@ -5,7 +5,7 @@ from pathlib import Path
 from platformdirs import user_data_dir
 
 from .schemas import ChannelTranscriptionRequest, VideoTranscriptionRequest
-from video_to_text.core import run_transcription
+from src.video_to_text.core import run_transcription
 
 logging.basicConfig(
     level=logging.INFO,
@@ -18,6 +18,10 @@ logger = logging.getLogger(__name__)
 app = FastAPI()
 
 OUTPUT_DIR = Path(user_data_dir(appname="video-to-text"))
+
+@app.get("/")
+def project_root():
+    return {"Welcome to Video-to-Text App!"}
 
 @app.post("/transcribe/video")
 def transcribe_video(payload: VideoTranscriptionRequest):
@@ -46,6 +50,7 @@ def transcribe_channel(payload: ChannelTranscriptionRequest):
                         end_date=payload.end_date,
                         save_as_text=payload.save_as_text
                     )
+
         logger.info(f"Successfully transcribed {len(video_data)} video(s) located at {OUTPUT_DIR}")
         return {"transcriptions": video_data}
 

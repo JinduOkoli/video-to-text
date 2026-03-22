@@ -1,14 +1,20 @@
+import logging
 import tempfile
 from datetime import datetime
 from pathlib import Path
 from typing import List
+from youtube_transcript_api import YouTubeTranscriptApi
+from youtube_transcript_api._errors import VideoUnavailable, CouldNotRetrieveTranscript
 
 from video_to_text.audio_to_text import transcribe_audio
 from video_to_text.config import API_KEY
 from video_to_text.constants import DB_NAME
 from video_to_text.database import init_db, save_to_db
+from video_to_text.exceptions import YouTubeTranscribeException, YouTubeCaptionException
 from video_to_text.get_yt_videos import get_channel_id, get_channel_videos, get_single_video
 from video_to_text.video_to_audio import download_audio
+
+logger = logging.getLogger(__name__)
 
 def run_transcription(channel_name: str = None,
                       video_id: str = None,
@@ -18,7 +24,7 @@ def run_transcription(channel_name: str = None,
                       max_duration: int = None,
                       start_date: datetime = None,
                       end_date: datetime = None,
-                      save_as_text: bool = False) -> List:
+                      save_as_text: bool = False) -> List | None:
     """
     Main logic that retrieves YouTube videos, downloads, transcribes abd saves in DB
 
@@ -34,6 +40,7 @@ def run_transcription(channel_name: str = None,
     :return: List containing video data
     """
     video_data: List = []
+    ytt_api = YouTubeTranscriptApi()
 
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -56,11 +63,32 @@ def run_transcription(channel_name: str = None,
 
     for video in videos:
         tempdir = tempfile.TemporaryDirectory()
-        audio_path = download_audio(youtube_url=video["URL"], tempdir=tempdir.name)
-        audio_text = transcribe_audio(audio_path=audio_path,
-                                      video=video,
-                                      output_dir=output_dir,
-                                      save_as_text=save_as_text)
+
+        try:
+            fetched_transcript = ytt_api.fetch(video.get("Id"))
+            audio_text = " ".join([entry.text for entry in fetched_transcript])
+
+        except VideoUnavailable:
+            logger.error("Video unavailable: %s", video_id)
+            return None
+
+        except CouldNotRetrieveTranscript as e:
+            logger.warning(f"Captions unavailable for {video_id}: {e} — falling back to audio")
+            try:
+
+                audio_path = download_audio(youtube_url=video["URL"], tempdir=tempdir.name)
+                audio_text = transcribe_audio(audio_path=audio_path,
+                                              video=video,
+                                              output_dir=output_dir,
+                                              save_as_text=save_as_text)
+
+            except Exception as e:
+                logger.exception(f"Audio fallback failed for {video_id}: {e}")
+                raise YouTubeTranscribeException(e)
+
+        except Exception as e:
+            logger.exception(f"Unexpected error for {video_id}: {e}")
+            raise YouTubeCaptionException(e)
 
         db_id = save_to_db(video_url=video["URL"],
                            title=video["Title"],

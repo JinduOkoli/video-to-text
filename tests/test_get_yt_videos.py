@@ -162,16 +162,19 @@ def test_get_channel_videos_returns_all_when_min_video_is_none(mock_get, mock_du
     assert len(videos) == 3
     assert videos == [
         {
+            'Id': 'video123',
             'PublishedAt': '2025-01-25T00:00:00Z',
             'Title': '1st Video',
             'URL': 'https://www.youtube.com/watch?v=video123'
         },
         {
+            'Id': 'video234',
             'PublishedAt': '2025-01-26T00:00:00Z',
             'Title': '2nd Video',
             'URL': 'https://www.youtube.com/watch?v=video234'
         },
         {
+            'Id': 'video345',
             'PublishedAt': '2025-01-27T00:00:00Z',
             'Title': '3rd Video',
             'URL': 'https://www.youtube.com/watch?v=video345'

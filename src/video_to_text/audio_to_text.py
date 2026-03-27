@@ -1,8 +1,6 @@
 import logging
 
 from faster_whisper import WhisperModel
-from pathlib import Path
-from typing import Dict, Optional
 
 logger = logging.getLogger(__name__)
 
@@ -21,7 +19,7 @@ def get_device():
         logger.info("Using CPU")
         return "cpu"
 
-def transcribe_audio(audio_path: str, video: Dict, output_dir: Path, save_as_text: Optional[bool] = False) -> str:
+def transcribe_audio(audio_path: str) -> str:
     device = get_device()
 
     if device == "cpu":
@@ -34,20 +32,7 @@ def transcribe_audio(audio_path: str, video: Dict, output_dir: Path, save_as_tex
     segments, info = model.transcribe(audio=audio_path, log_progress=True)
     logger.info("Successfully transcribed audio. Compiling segments ...")
 
-    filepath = output_dir / f"{video['PublishedAt']}_{video['Title']}].txt"
-
     audio_text = " ".join(s.text for s in segments)
-
-    if save_as_text:
-        write_segments_to_file(audio_text=audio_text, filepath=filepath)
 
     return audio_text
 
-def write_segments_to_file(audio_text: str, filepath: Path):
-    logger.info(f"Writing full text to file: {filepath} ...")
-    try:
-        with open(filepath, 'w') as file:
-            file.write(audio_text)
-
-    except OSError as e:
-        raise OSError(f"Unable to write to file: {e}")
